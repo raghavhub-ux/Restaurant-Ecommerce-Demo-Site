@@ -1,140 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us — The Saffron Plate</title>
+  <title>About Us &amp; Heritage — The Saffron Plate</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Cormorant+Garamond:ital,wght@0,500;1,400;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="about.css">
 </head>
-
 <body>
-  <header class="site-header navbar-overlay" id="siteHeader">
-    <div class="nav-inner">
-      <nav class="nav-menu-list left" aria-label="Main Navigation Left">
-        <a href="index.html">Home</a>
-        <a href="index.html#menu">Menu</a>
-        <a href="order.html" class="nav-order-link">
-          <span class="nav-pulse-dot" aria-hidden="true"></span>
-          Order Online
-        </a>
-        <a href="reservation.html">Reservations</a>
-      </nav>
-
-      <a href="index.html" class="brand-center" aria-label="The Saffron Plate Home">
-        <div class="brand-crest">
-          <svg class="brand-crest-svg" width="28" height="22" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <path d="M16 1L19.5 9L27 3L23.5 16H8.5L5 3L12.5 9L16 1Z" stroke="url(#goldGradAbout)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-            <circle cx="16" cy="1" r="1.5" fill="#C9A227"/>
-            <circle cx="27" cy="3" r="1.5" fill="#C9A227"/>
-            <circle cx="5" cy="3" r="1.5" fill="#C9A227"/>
-            <path d="M7 19.5C11.5 22 20.5 22 25 19.5" stroke="url(#goldGradAbout)" stroke-width="1.6" stroke-linecap="round"/>
-            <circle cx="16" cy="19.5" r="1.8" fill="url(#goldGradAbout)"/>
-            <defs>
-              <linearGradient id="goldGradAbout" x1="0" y1="0" x2="32" y2="24" gradientUnits="userSpaceOnUse">
-                <stop offset="0%" stop-color="#E5C058"/>
-                <stop offset="50%" stop-color="#C9A227"/>
-                <stop offset="100%" stop-color="#9A7818"/>
-              </linearGradient>
-            </defs>
-          </svg>
+  <!-- Balanced Site Header -->
+  <header class="site-header">
+    <nav class="navbar-overlay">
+      <div class="nav-inner">
+        <div class="nav-menu-list left">
+          <a href="index.html">Home</a>
+          <a href="order.html">Menu &amp; Order</a>
+          <a href="reservation.html">Reservations</a>
         </div>
-        <span class="brand-name">THE SAFFRON PLATE</span>
-        <span class="brand-sub">FINE DINING &amp; GOURMET KITCHEN</span>
-      </a>
-
-      <nav class="nav-menu-list right" aria-label="Main Navigation Right">
-        <a href="gallery.html">Gallery</a>
-        <a href="about.html" class="active">About Us</a>
-        <a href="team.html">Our Team</a>
-        <a href="contact.html">Contact</a>
-        <div class="nav-dropdown" id="navAccountDropdown">
-          <button type="button" class="nav-dropdown-trigger" id="navDropdownTrigger" aria-expanded="false" aria-haspopup="true">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-            <span>Account</span>
-            <span class="nav-cart-count">0</span>
-            <svg class="dropdown-chevron" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
-          </button>
-          <div class="nav-dropdown-menu" id="navDropdownMenu">
-            <a href="auth.html" class="dropdown-item">
-              <span class="dropdown-item-left">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path><polyline points="10 17 15 12 10 7"></polyline><line x1="15" y1="12" x2="3" y2="12"></line></svg>
-                <span>Sign In / Register</span>
-              </span>
-            </a>
-            <div class="dropdown-divider"></div>
-            <a href="order.html#cart" class="dropdown-item">
-              <span class="dropdown-item-left">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
-                <span>View Cart</span>
-              </span>
-              <span class="nav-cart-count">0</span>
-            </a>
-          </div>
-        </div>
-      </nav>
-
-      <div class="nav-mobile-actions">
-        <a href="order.html#cart" class="nav-cart-btn mobile-cart-btn" aria-label="View Shopping Cart">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <circle cx="9" cy="21" r="1"></circle>
-            <circle cx="20" cy="21" r="1"></circle>
-            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
-          </svg>
-          <span class="nav-cart-count">0</span>
+        <a href="index.html" class="brand-center">
+          <span class="brand-name">THE SAFFRON PLATE</span>
+          <span class="brand-sub">FINE DINING &amp; GOURMET KITCHEN</span>
         </a>
-        <button type="button" class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Open mobile navigation" aria-expanded="false" aria-controls="mobileNavDrawer">
-          <span></span>
-          <span></span>
-          <span></span>
+        <div class="nav-menu-list right">
+          <a href="about.html" class="active">About Us</a>
+          <a href="team.html">Our Team</a>
+          <a href="contact.html">Contact</a>
+          <a href="auth.html" class="nav-auth-btn">Sign In</a>
+        </div>
+        <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle Menu">
+          <span></span><span></span><span></span>
         </button>
       </div>
-    </div>
-  </header>
-  <div class="mobile-nav-backdrop" id="mobileNavBackdrop"></div>
-  <aside class="mobile-nav-drawer" id="mobileNavDrawer" aria-label="Mobile Navigation Menu">
-    <div class="mobile-drawer-header">
-      <div class="brand-crest">
-        <svg width="24" height="18" viewBox="0 0 32 24" fill="none" stroke="var(--gold)" stroke-width="1.8" aria-hidden="true">
-          <path d="M16 1L19.5 9L27 3L23.5 16H8.5L5 3L12.5 9L16 1Z"/>
-        </svg>
+      <div class="mobile-nav-menu" id="mobileNavMenu">
+        <a href="index.html">Home</a>
+        <a href="order.html">Menu &amp; Order</a>
+        <a href="reservation.html">Reservations</a>
+        <a href="about.html" class="active">Our Heritage</a>
+        <a href="team.html">Culinary Team</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="auth.html">Sign In</a>
       </div>
-      <span class="drawer-brand-title">THE SAFFRON PLATE</span>
-      <button type="button" class="mobile-nav-close" id="mobileNavClose" aria-label="Close menu">&times;</button>
-    </div>
-
-    <nav class="mobile-drawer-links">
-      <a href="index.html">Home</a>
-      <a href="index.html#menu">Our Menu</a>
-      <a href="order.html" class="drawer-order-highlight">
-        <span>Order Online</span>
-        <span class="drawer-badge">Live</span>
-      </a>
-      <a href="reservation.html">Table Reservations</a>
-      <a href="gallery.html">Dining Gallery</a>
-      <a href="about.html" class="active">About Heritage</a>
-      <a href="team.html">Master Chefs &amp; Team</a>
-      <a href="contact.html">Contact &amp; Location</a>
-      <a href="auth.html">Sign In / Register</a>
     </nav>
+  </header>
 
-    <div class="mobile-drawer-actions">
-      <a href="order.html" class="btn solid mobile-drawer-btn">Order Online</a>
-      <a href="reservation.html" class="btn outline mobile-drawer-btn">Reserve a Table</a>
-    </div>
-
-    <div class="mobile-drawer-footer">
-      <p class="drawer-hours">Open Daily: 12:00 PM – 11:30 PM</p>
-      <p class="drawer-phone">Concierge: +91 11 4987 6543</p>
-    </div>
-  </aside>
-
+  <!-- About Main Container -->
   <main class="about-container">
-    
     <div class="about-header">
       <span class="eyebrow">OUR STORY</span>
       <h1>HERITAGE &amp; ARTISTRY</h1>
@@ -144,7 +57,7 @@
     <div class="about-card">
       <div class="about-card-text">
         <h2>OUR HERITAGE</h2>
-        <p>Founded on the principle of fine vegetarian dining, <strong>The Saffron Plate</strong> combines authentic royal recipes with hand-ground spices and organic ingredients.</p>
+        <p>Founded on the principle of fine vegetarian dining, <strong>The Saffron Plate</strong> combines authentic royal court recipes from Awadh, Mewar, and Kashmir with hand-ground spices and organic ingredients.</p>
       </div>
       <img src="images/indian_thali.jpg" alt="Heritage Dining">
     </div>
@@ -153,31 +66,35 @@
       <img src="images/chef_portrait.jpg" alt="Executive Chef">
       <div class="about-card-text">
         <h2>EXECUTIVE CHEF</h2>
-        <p>Led by Chef Vikramaditya, our culinary team celebrates centuries-old recipes prepared with artisanal craft, pure oils, and seasonal flavors.</p>
+        <p>Led by Chef Vikramaditya, our culinary team celebrates centuries-old recipes prepared with artisanal craft, pure cold-pressed oils, and seasonal flavors.</p>
       </div>
     </div>
-
   </main>
 
-  <footer>
-    <div class="footer-simple">
-      <span class="brand-name">THE SAFFRON PLATE</span>
-      <ul class="footer-simple-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="index.html#menu">Menu</a></li>
-        <li><a href="order.html">Order Online</a></li>
-        <li><a href="reservation.html">Reservations</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="team.html">Our Team</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="auth.html">Sign In / Register</a></li>
-      </ul>
-      <p>© 2026 The Saffron Plate. All rights reserved. Pure Vegetarian Fine Dining.</p>
+  <!-- Simple Clean Site Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <span class="brand-name">THE SAFFRON PLATE</span>
+        <span class="brand-sub">FINE DINING &amp; GOURMET KITCHEN</span>
+        <p>100% Pure Vegetarian Royal Dining. Greater Kailash II, New Delhi.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="order.html">Menu &amp; Order</a>
+        <a href="reservation.html">Reservations</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About Us</a>
+        <a href="team.html">Our Team</a>
+        <a href="contact.html">Contact</a>
+        <a href="auth.html">Sign In</a>
+      </div>
+      <div class="footer-copy">
+        <p>&copy; 2026 The Saffron Plate. All rights reserved.</p>
+      </div>
     </div>
   </footer>
 
   <script src="nav.js"></script>
- </body>
-
+</body>
 </html>

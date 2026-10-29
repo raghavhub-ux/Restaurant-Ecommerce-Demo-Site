@@ -7,259 +7,223 @@
   <title>The Saffron Plate — Fine Dining &amp; Pure Vegetarian Kitchen</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Jost:wght@300;400;500;600&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-
-  <header class="site-header navbar-overlay" id="siteHeader">
-    <div class="nav-inner">
-      <nav class="nav-menu-list left" aria-label="Main Navigation Left">
-        <a href="index.html" class="active">Home</a>
-        <a href="index.html#menu">Menu</a>
-        <a href="order.html" class="nav-order-link">
-          <span class="nav-pulse-dot" aria-hidden="true"></span>
-          Order Online
-        </a>
-        <a href="reservation.html">Reservations</a>
-      </nav>
-
-      <a href="index.html" class="brand-center" aria-label="The Saffron Plate Home">
-        <div class="brand-crest">
-          <svg class="brand-crest-svg" width="28" height="22" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <path d="M16 1L19.5 9L27 3L23.5 16H8.5L5 3L12.5 9L16 1Z" stroke="url(#goldGradIndex)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-            <circle cx="16" cy="1" r="1.5" fill="#C9A227"/>
-            <circle cx="27" cy="3" r="1.5" fill="#C9A227"/>
-            <circle cx="5" cy="3" r="1.5" fill="#C9A227"/>
-            <path d="M7 19.5C11.5 22 20.5 22 25 19.5" stroke="url(#goldGradIndex)" stroke-width="1.6" stroke-linecap="round"/>
-            <circle cx="16" cy="19.5" r="1.8" fill="url(#goldGradIndex)"/>
-            <defs>
-              <linearGradient id="goldGradIndex" x1="0" y1="0" x2="32" y2="24" gradientUnits="userSpaceOnUse">
-                <stop offset="0%" stop-color="#E5C058"/>
-                <stop offset="50%" stop-color="#C9A227"/>
-                <stop offset="100%" stop-color="#9A7818"/>
-              </linearGradient>
-            </defs>
-          </svg>
+  <!-- Unified Balanced Site Header -->
+  <header class="site-header">
+    <nav class="navbar-overlay">
+      <div class="nav-inner">
+        <div class="nav-menu-list left">
+          <a href="index.html" class="active">Home</a>
+          <a href="order.html">Menu &amp; Order</a>
+          <a href="reservation.html">Reservations</a>
         </div>
-        <span class="brand-name">THE SAFFRON PLATE</span>
-        <span class="brand-sub">FINE DINING &amp; GOURMET KITCHEN</span>
-      </a>
-
-      <nav class="nav-menu-list right" aria-label="Main Navigation Right">
-        <a href="gallery.html">Gallery</a>
-        <a href="about.html">About Us</a>
-        <a href="team.html">Our Team</a>
-        <a href="contact.html">Contact</a>
-        <div class="nav-dropdown" id="navAccountDropdown">
-          <button type="button" class="nav-dropdown-trigger" id="navDropdownTrigger" aria-expanded="false" aria-haspopup="true">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-            <span>Account</span>
-            <span class="nav-cart-count">0</span>
-            <svg class="dropdown-chevron" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
-          </button>
-          <div class="nav-dropdown-menu" id="navDropdownMenu">
-            <a href="auth.html" class="dropdown-item">
-              <span class="dropdown-item-left">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path><polyline points="10 17 15 12 10 7"></polyline><line x1="15" y1="12" x2="3" y2="12"></line></svg>
-                <span>Sign In / Register</span>
-              </span>
-            </a>
-            <div class="dropdown-divider"></div>
-            <a href="order.html#cart" class="dropdown-item">
-              <span class="dropdown-item-left">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
-                <span>View Cart</span>
-              </span>
-              <span class="nav-cart-count">0</span>
-            </a>
-          </div>
-        </div>
-      </nav>
-
-      <div class="nav-mobile-actions">
-        <a href="order.html#cart" class="nav-cart-btn mobile-cart-btn" aria-label="View Shopping Cart">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <circle cx="9" cy="21" r="1"></circle>
-            <circle cx="20" cy="21" r="1"></circle>
-            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
-          </svg>
-          <span class="nav-cart-count">0</span>
+        <a href="index.html" class="brand-center">
+          <span class="brand-name">THE SAFFRON PLATE</span>
+          <span class="brand-sub">FINE DINING &amp; GOURMET KITCHEN</span>
         </a>
-        <button type="button" class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Open mobile navigation" aria-expanded="false" aria-controls="mobileNavDrawer">
-          <span></span>
-          <span></span>
-          <span></span>
+        <div class="nav-menu-list right">
+          <a href="about.html">About Us</a>
+          <a href="team.html">Our Team</a>
+          <a href="contact.html">Contact</a>
+          <a href="auth.html" class="nav-auth-btn">Sign In</a>
+        </div>
+        <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle Menu">
+          <span></span><span></span><span></span>
         </button>
       </div>
-    </div>
+      <div class="mobile-nav-menu" id="mobileNavMenu">
+        <a href="index.html" class="active">Home</a>
+        <a href="order.html">Menu &amp; Order</a>
+        <a href="reservation.html">Reservations</a>
+        <a href="about.html">Our Heritage</a>
+        <a href="team.html">Culinary Team</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="auth.html">Sign In</a>
+      </div>
+    </nav>
   </header>
 
-  <div class="mobile-nav-backdrop" id="mobileNavBackdrop"></div>
-  <aside class="mobile-nav-drawer" id="mobileNavDrawer" aria-label="Mobile Navigation Menu">
-    <div class="mobile-drawer-header">
-      <div class="brand-crest">
-        <svg width="24" height="18" viewBox="0 0 32 24" fill="none" stroke="var(--gold)" stroke-width="1.8" aria-hidden="true">
-          <path d="M16 1L19.5 9L27 3L23.5 16H8.5L5 3L12.5 9L16 1Z"/>
-        </svg>
-      </div>
-      <span class="drawer-brand-title">THE SAFFRON PLATE</span>
-      <button type="button" class="mobile-nav-close" id="mobileNavClose" aria-label="Close menu">&times;</button>
-    </div>
-
-    <nav class="mobile-drawer-links">
-      <a href="index.html" class="active">Home</a>
-      <a href="index.html#menu">Our Menu</a>
-      <a href="order.html" class="drawer-order-highlight">
-        <span>Order Online</span>
-        <span class="drawer-badge">Live</span>
-      </a>
-      <a href="reservation.html">Table Reservations</a>
-      <a href="gallery.html">Dining Gallery</a>
-      <a href="about.html">About Heritage</a>
-      <a href="team.html">Master Chefs &amp; Team</a>
-      <a href="contact.html">Contact &amp; Location</a>
-      <a href="auth.html">Sign In / Register</a>
-    </nav>
-
-    <div class="mobile-drawer-actions">
-      <a href="order.html" class="btn solid mobile-drawer-btn">Order Online</a>
-      <a href="reservation.html" class="btn outline mobile-drawer-btn">Reserve a Table</a>
-    </div>
-
-    <div class="mobile-drawer-footer">
-      <p class="drawer-hours">Open Daily: 12:00 PM – 11:30 PM</p>
-      <p class="drawer-phone">Concierge: +91 11 4987 6543</p>
-    </div>
-  </aside>
-
+  <!-- Hero Section -->
   <section class="hero-viewport" id="home">
     <div class="hero-main-content">
       <div class="hero-text-box">
         <span class="hero-subtitle">The Saffron Plate — Authentic Culinary Excellence</span>
         <h1>SAVOR<br>THE <em>HERITAGE</em></h1>
-        <p class="hero-sub">A seasonal vegetarian menu inspired by rich Indian culinary traditions, thoughtfully
-          prepared with authentic spices, organic ingredients, and timeless craft.</p>
+        <p class="hero-sub">An imperial sanctuary celebrating pure vegetarian culinary heritage. Experience slow-simmered Awadhi, Mewari, and Kashmiri court recipes prepared with organic spices, cold-pressed oils, and timeless craft.</p>
         <div class="hero-cta" style="display: flex; gap: 16px; flex-wrap: wrap;">
-          <a href="order.html" class="btn solid">ORDER ONLINE</a>
-          <a href="#menu" class="btn outline">EXPLORE MENU</a>
+          <a href="order.html" class="btn solid">EXPLORE MENU &amp; ORDER</a>
+          <a href="reservation.html" class="btn outline">RESERVE A TABLE</a>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="culinary-section" id="menu">
-    <div class="section-head">
-      <span class="eyebrow">MENU PREVIEW</span>
-      <h2>CULINARY HIGHLIGHTS</h2>
-    </div>
-
-    <div class="culinary-grid">
-      <article class="culinary-card">
-        <img src="images/chole_bhature.jpg" alt="Chole Bhature" class="culinary-card-img">
-        <h3>CHOLE BHATURE</h3>
-        <p>Pillowy fried bhature with slow-simmered dark chana masala, pickle &amp; ginger juliennes.</p>
-        <span class="price">₹120</span>
-      </article>
-
-      <article class="culinary-card">
-        <img src="images/golgappe.jpg" alt="Golgappe" class="culinary-card-img">
-        <h3>GOLGAPPE</h3>
-        <p>Warm crisp puris filled with spiced potato sprouts &amp; tangy digestive water.</p>
-        <span class="price">₹80</span>
-      </article>
-
-      <article class="culinary-card">
-        <img src="images/gulab_jamun.jpg" alt="Gulab Jamun" class="culinary-card-img">
-        <h3>GULAB JAMUN</h3>
-        <p>Handcrafted khoya dumplings fried golden brown and soaked in warm rose syrup with saffron strings.</p>
-        <span class="price">₹70</span>
-      </article>
-
-      <article class="culinary-card">
-        <img src="images/hakka_noodles.jpg" alt="Hakka Noodles" class="culinary-card-img">
-        <h3>HAKKA NOODLES</h3>
-        <p>Wok-tossed noodles with farm-fresh vegetables, roasted garlic &amp; sesame oil.</p>
-        <span class="price">₹150</span>
-      </article>
-
-      <article class="culinary-card">
-        <img src="images/sundae.jpg" alt="Hot Fudge Sundae" class="culinary-card-img">
-        <h3>HOT FUDGE SUNDAE</h3>
-        <p>Vanilla bean gelato topped with warm dark chocolate fudge, roasted almonds &amp; maraschino cherry.</p>
-        <span class="price">₹140</span>
-      </article>
-
-      <article class="culinary-card">
-        <img src="images/indian_thali.jpg" alt="Maharaja Indian Thali" class="culinary-card-img">
-        <h3>MAHARAJA INDIAN THALI</h3>
-        <p>A royal feast of Paneer Butter Masala, Dal Makhani, Mix Veg, Pulao, Butter Naan, Gulab Jamun &amp; Sweet
-          Lassi.</p>
-        <span class="price">₹280</span>
-      </article>
-
-      <article class="culinary-card">
-        <img src="images/malai_chaap.jpg" alt="Malai Chaap" class="culinary-card-img">
-        <h3>MALAI CHAAP</h3>
-        <p>Char-grilled soya skewers in rich cream, cashew paste, green cardamom &amp; micro herbs.</p>
-        <span class="price">₹180</span>
-      </article>
-
-      <article class="culinary-card">
-        <img src="images/masala_dosa.jpg" alt="Masala Dosa" class="culinary-card-img">
-        <h3>MASALA DOSA</h3>
-        <p>Golden crispy fermented crepe filled with spiced potato masala, served with coconut chutney &amp; sambar.</p>
-        <span class="price">₹135</span>
-      </article>
-
-      <article class="culinary-card">
-        <img src="images/momos.jpg" alt="Momos" class="culinary-card-img">
-        <h3>MOMOS</h3>
-        <p>Steamed vegetable dumplings packed with aromatic herbs, served with fiery red chutney.</p>
-        <span class="price">₹110</span>
-      </article>
-
-      <article class="culinary-card">
-        <img src="images/ramen.jpg" alt="Ramen" class="culinary-card-img">
-        <h3>RAMEN</h3>
-        <p>Slow-simmered rich vegetarian miso broth with hand-pulled noodles, bok choy &amp; wood ear mushrooms.</p>
-        <span class="price">₹190</span>
-      </article>
-
-      <article class="culinary-card">
-        <img src="images/rasmalai.jpg" alt="Rasmalai" class="culinary-card-img">
-        <h3>RASMALAI</h3>
-        <p>Delicate chenna discs gently simmered in saffron milk, garnished with pistachio slivers.</p>
-        <span class="price">₹90</span>
-      </article>
-
-      <article class="culinary-card">
-        <img src="images/strawberry_shake.jpg" alt="Strawberry Shake" class="culinary-card-img">
-        <h3>STRAWBERRY SHAKE</h3>
-        <p>Churned organic Mahabaleshwar strawberry shake topped with double cream &amp; white chocolate curls.</p>
-        <span class="price">₹130</span>
-      </article>
+  <!-- Imperial Heritage Story Section -->
+  <section class="home-story-section">
+    <div class="story-grid">
+      <div class="story-text">
+        <span class="eyebrow">TIME-HONORED GASTRONOMY</span>
+        <h2>THE ROYAL HERITAGE</h2>
+        <p>At <strong>The Saffron Plate</strong>, dining is an imperial ritual. We revive the lost royal court kitchens of ancient India — where royal hakims and master bawarchis elevated vegetarian fare into sensory poetry.</p>
+        <p>From slow-cooked dum biryanis sealed in hand-thrown earthen pots to stone-ground saffron kulfis, each creation respects sattvic purity, organic integrity, and supreme fine dining luxury.</p>
+        <div style="margin-top: 24px;">
+          <a href="about.html" class="btn outline">OUR HERITAGE STORY &rarr;</a>
+        </div>
+      </div>
+      <div class="story-img-wrap">
+        <img src="images/indian_thali.jpg" alt="Royal Vegetarian Feast" loading="lazy">
+      </div>
     </div>
   </section>
 
-  <footer>
-    <div class="footer-simple">
-      <span class="brand-name">THE SAFFRON PLATE</span>
-      <ul class="footer-simple-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="index.html#menu">Menu</a></li>
-        <li><a href="order.html">Order Online</a></li>
-        <li><a href="reservation.html">Reservations</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="team.html">Our Team</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="auth.html">Sign In / Register</a></li>
-      </ul>
-      <p>© 2026 The Saffron Plate. All rights reserved. Pure Vegetarian Fine Dining.</p>
+  <!-- Signature Degustation Showcase -->
+  <section class="home-signature-section">
+    <div class="section-head">
+      <span class="eyebrow">CHEF'S CURATED MASTERPIECES</span>
+      <h2>SIGNATURE CREATIONS</h2>
+    </div>
+
+    <div class="signature-grid">
+      <article class="signature-card">
+        <img src="images/indian_thali.jpg" alt="Maharaja Indian Thali" loading="lazy">
+        <div class="signature-card-body">
+          <span class="card-category-badge">Royal Banquet</span>
+          <h3>Maharaja Indian Thali</h3>
+          <p>Paneer Butter Masala, slow-simmered Dal Makhani, Seasonal Vegetables, Jeera Pulao, Butter Naan, Gulab Jamun &amp; Sweet Lassi served on brassware.</p>
+          <div class="signature-card-footer">
+            <span class="price">₹280</span>
+            <a href="order.html" class="btn solid" style="padding: 8px 18px; font-size: 11px;">Order Dish</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="signature-card">
+        <img src="images/malai_chaap.jpg" alt="Malai Chaap" loading="lazy">
+        <div class="signature-card-body">
+          <span class="card-category-badge">Tandoor Special</span>
+          <h3>Tandoori Malai Chaap</h3>
+          <p>Charcoal-grilled soya skewers marinated in rich clotted cream, cashew nut paste, green cardamom, and garnished with fresh micro-greens.</p>
+          <div class="signature-card-footer">
+            <span class="price">₹180</span>
+            <a href="order.html" class="btn solid" style="padding: 8px 18px; font-size: 11px;">Order Dish</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="signature-card">
+        <img src="images/rasmalai.jpg" alt="Kesar Pista Rasmalai" loading="lazy">
+        <div class="signature-card-body">
+          <span class="card-category-badge">Signature Dessert</span>
+          <h3>Kesar Pista Rasmalai</h3>
+          <p>Velvety chenna patties gently poached in thickened saffron milk, lavishly garnished with Persian pistachios and pure edible silver leaf.</p>
+          <div class="signature-card-footer">
+            <span class="price">₹90</span>
+            <a href="order.html" class="btn solid" style="padding: 8px 18px; font-size: 11px;">Order Dish</a>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div style="text-align: center;">
+      <a href="order.html" class="btn outline" style="padding: 14px 32px; font-size: 13px;">VIEW FULL MENU &amp; ORDER ONLINE &rarr;</a>
+    </div>
+  </section>
+
+  <!-- Imperial Spaces & Ambiance Preview -->
+  <section class="home-spaces-section">
+    <div class="section-head">
+      <span class="eyebrow">ATMOSPHERE &amp; ARCHITECTURE</span>
+      <h2>THE SANCTUARY</h2>
+    </div>
+
+    <div class="spaces-preview-grid">
+      <div class="space-preview-card">
+        <span class="space-num">I</span>
+        <h3>The Maharaja Suites</h3>
+        <p>Private dining chambers featuring hand-carved teak arches, pure gold-leaf chandeliers, acoustic comfort, and dedicated butler service.</p>
+        <a href="gallery.html" class="exp-link" style="color: var(--gold); font-size: 12px; font-weight: 600;">Explore Gallery &rarr;</a>
+      </div>
+
+      <div class="space-preview-card">
+        <span class="space-num">II</span>
+        <h3>Panoramic Starlit Terrace</h3>
+        <p>Open-air velvet sky dining overlooking Delhi skylines with candle-lit marble tables, live sitar ragas, and heated winter floors.</p>
+        <a href="gallery.html" class="exp-link" style="color: var(--gold); font-size: 12px; font-weight: 600;">Explore Gallery &rarr;</a>
+      </div>
+
+      <div class="space-preview-card">
+        <span class="space-num">III</span>
+        <h3>The Culinary Atelier</h3>
+        <p>An open theater of live tandoor and copper handi cooking where age-old vegetarian court secrets are revived with master craft.</p>
+        <a href="gallery.html" class="exp-link" style="color: var(--gold); font-size: 12px; font-weight: 600;">Explore Gallery &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Guest Accolades -->
+  <section class="home-accolades-section">
+    <div class="section-head">
+      <span class="eyebrow">CRITICAL ACCLAIM</span>
+      <h2>PATRON EXPERIENCES</h2>
+    </div>
+
+    <div class="accolades-grid">
+      <div class="accolade-card">
+        <div class="accolade-stars">★★★★★</div>
+        <blockquote>"An extraordinary revelation in pure vegetarian fine dining. The Dal Bukhara and Malai Chaap rival the best royal kitchens in Asia."</blockquote>
+        <span class="accolade-author">— Delhi Gourmet Review</span>
+      </div>
+
+      <div class="accolade-card">
+        <div class="accolade-stars">★★★★★</div>
+        <blockquote>"The Maharaja Suite candlelight anniversary experience was sublime. Flawless hospitality, timeless ambiance, and unforgettable flavors."</blockquote>
+        <span class="accolade-author">— Aditya &amp; Meera Singhania</span>
+      </div>
+
+      <div class="accolade-card">
+        <div class="accolade-stars">★★★★★</div>
+        <blockquote>"The Saffron Plate proves that centuries-old Indian vegetarian recipes hold unrivaled culinary elegance. Absolutely magnificent."</blockquote>
+        <span class="accolade-author">— Epicurean Heritage Journal</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reservation CTA Banner -->
+  <section class="home-cta-section">
+    <span class="eyebrow">YOUR TABLE AWAITS</span>
+    <h2>EXPERIENCE TIMELESS ELEGANCE</h2>
+    <p>Whether for an intimate candlelight dinner or a grand royal family banquet, our doors are open to welcome you.</p>
+    <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+      <a href="reservation.html" class="btn solid">RESERVE A TABLE</a>
+      <a href="order.html" class="btn outline">ORDER FOR DELIVERY</a>
+    </div>
+  </section>
+
+  <!-- Simple Clean Site Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <span class="brand-name">THE SAFFRON PLATE</span>
+        <span class="brand-sub">FINE DINING &amp; GOURMET KITCHEN</span>
+        <p>100% Pure Vegetarian Royal Dining. Greater Kailash II, New Delhi.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="order.html">Menu &amp; Order</a>
+        <a href="reservation.html">Reservations</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About Us</a>
+        <a href="team.html">Our Team</a>
+        <a href="contact.html">Contact</a>
+        <a href="auth.html">Sign In</a>
+      </div>
+      <div class="footer-copy">
+        <p>&copy; 2026 The Saffron Plate. All rights reserved.</p>
+      </div>
     </div>
   </footer>
 
