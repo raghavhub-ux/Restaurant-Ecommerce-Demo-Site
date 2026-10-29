@@ -1,273 +1,102 @@
+// The Saffron Plate - Order Online & Cart System
 const MENU_ITEMS = [
-  {
-    id: "thali-01",
-    name: "Maharaja Indian Thali",
-    category: "royal-classics",
-    price: 280,
-    tags: ["chef", "jain"],
-    image: "images/indian_thali.jpg",
-    badge: "Royal Banquet",
-    description: "Paneer Butter Masala, Dal Makhani, Seasonal Vegetables, Jeera Pulao, Butter Naan, Gulab Jamun & Sweet Lassi."
-  },
-  {
-    id: "chaap-02",
-    name: "Malai Chaap",
-    category: "royal-classics",
-    price: 180,
-    tags: ["mild"],
-    image: "images/malai_chaap.jpg",
-    badge: "Tandoor Special",
-    description: "Char-grilled soya skewers marinated in rich clotted cream, cashew nut paste, green cardamom and micro-greens."
-  },
-  {
-    id: "chole-03",
-    name: "Chole Bhature",
-    category: "royal-classics",
-    price: 120,
-    tags: ["spicy"],
-    image: "images/chole_bhature.jpg",
-    badge: "Old Delhi Heritage",
-    description: "Pillowy puffed bhature paired with slow-simmered dark chana masala, mango pickle and pickled ginger juliennes."
-  },
-  {
-    id: "golgappe-04",
-    name: "Golgappe",
-    category: "street-specials",
-    price: 80,
-    tags: ["spicy", "jain"],
-    image: "images/golgappe.jpg",
-    badge: "Street Artisan",
-    description: "Crisp artisanal semolina puris filled with spiced potato sprouts, sweet date chutney & chilled digestive mint water."
-  },
-  {
-    id: "momos-05",
-    name: "Steamed Vegetable Momos",
-    category: "street-specials",
-    price: 110,
-    tags: ["spicy"],
-    image: "images/momos.jpg",
-    badge: "Himalayan Classic",
-    description: "Delicate thin-skinned dumplings packed with garden-fresh greens and mountain herbs, served with fiery roasted tomato dip."
-  },
-  {
-    id: "hakka-06",
-    name: "Wok-Tossed Hakka Noodles",
-    category: "asian-gourmet",
-    price: 150,
-    tags: ["chef"],
-    image: "images/hakka_noodles.jpg",
-    badge: "Gourmet Asian",
-    description: "Handcrafted wheat noodles tossed over high flame with crunchy bell peppers, roasted garlic, spring onion & pure sesame oil."
-  },
-  {
-    id: "ramen-07",
-    name: "Artisan Vegetarian Ramen",
-    category: "asian-gourmet",
-    price: 190,
-    tags: ["chef"],
-    image: "images/ramen.jpg",
-    badge: "Signature Bowl",
-    description: "Slow-simmered rich vegetarian miso-shiitake broth with hand-pulled noodles, braised tofu, bok choy and wood ear mushrooms."
-  },
-  {
-    id: "dosa-08",
-    name: "Mysore Masala Dosa",
-    category: "south-indian",
-    price: 135,
-    tags: ["spicy", "jain"],
-    image: "images/masala_dosa.jpg",
-    badge: "Crispy Delight",
-    description: "Golden crispy fermented crepe layered with fiery red chili paste and spiced potato mash, served with coconut chutney and sambar."
-  },
-  {
-    id: "gulab-09",
-    name: "Shahi Gulab Jamun",
-    category: "desserts",
-    price: 70,
-    tags: ["mild", "jain"],
-    image: "images/gulab_jamun.jpg",
-    badge: "Sweet Legacy",
-    description: "Handcrafted khoya dumplings fried golden in pure desi ghee and soaked in warm Kashmiri saffron and Damask rose syrup."
-  },
-  {
-    id: "rasmalai-10",
-    name: "Kesar Pista Rasmalai",
-    category: "desserts",
-    price: 90,
-    tags: ["mild", "jain"],
-    image: "images/rasmalai.jpg",
-    badge: "Royal Sweet",
-    description: "Velvety chenna patties gently poached in thickened saffron milk, lavishly garnished with Persian pistachios and silver leaf."
-  },
-  {
-    id: "sundae-11",
-    name: "Belgian Hot Fudge Sundae",
-    category: "desserts",
-    price: 140,
-    tags: ["mild"],
-    image: "images/sundae.jpg",
-    badge: "Lounge Dessert",
-    description: "Artisanal Madagascar vanilla bean gelato drenched in warm 70% dark Belgian cocoa fudge, roasted almonds and cherries."
-  },
-  {
-    id: "shake-12",
-    name: "Mahabaleshwar Strawberry Shake",
-    category: "beverages",
-    price: 130,
-    tags: ["mild", "jain"],
-    image: "images/strawberry_shake.jpg",
-    badge: "Chilled Refreshment",
-    description: "Freshly churned farm strawberry puree with organic milk, double cream crown and imported white chocolate shavings."
-  },
-  {
-    id: "coffee-13",
-    name: "Imperial Saffron Cold Brew",
-    category: "beverages",
-    price: 110,
-    tags: ["chef"],
-    image: "images/iced_coffee.jpg",
-    badge: "Barista Special",
-    description: "18-hour cold brew made from single-estate Chikmagalur Arabica beans infused with royal saffron essence and condensed milk."
-  },
-  {
-    id: "chef-14",
-    name: "The Royal Platter Special",
-    category: "royal-classics",
-    price: 450,
-    tags: ["chef"],
-    image: "images/hero_dish.jpg",
-    badge: "Executive Masterpiece",
-    description: "Curated chef selection showcasing tandoori delicacies, saffron rice pilaf, artisan stuffed kulcha, and signature dessert duo."
-  }
+  { id: "thali-01", name: "Maharaja Indian Thali", category: "royal-classics", price: 280, tags: ["chef", "jain"], image: "images/indian_thali.jpg", badge: "Royal Banquet", description: "Paneer butter masala, dal makhani, jeera pulao, butter naan, gulab jamun & sweet lassi." },
+  { id: "chaap-02", name: "Malai Chaap", category: "royal-classics", price: 180, tags: ["mild"], image: "images/malai_chaap.jpg", badge: "Tandoor Special", description: "Char-grilled soya skewers marinated in clotted cream, cashew paste, and green cardamom." },
+  { id: "chole-03", name: "Chole Bhature", category: "royal-classics", price: 120, tags: ["spicy"], image: "images/chole_bhature.jpg", badge: "Old Delhi Heritage", description: "Puffed bhature served with slow-simmered dark chana masala, pickle, and ginger." },
+  { id: "golgappe-04", name: "Golgappe", category: "street-specials", price: 80, tags: ["spicy", "jain"], image: "images/golgappe.jpg", badge: "Street Artisan", description: "Crisp semolina puris with spiced potato sprouts, date chutney & chilled digestive mint water." },
+  { id: "momos-05", name: "Steamed Vegetable Momos", category: "street-specials", price: 110, tags: ["spicy"], image: "images/momos.jpg", badge: "Himalayan Classic", description: "Thin-skinned dumplings packed with garden greens, served with roasted tomato dip." },
+  { id: "hakka-06", name: "Wok-Tossed Hakka Noodles", category: "asian-gourmet", price: 150, tags: ["chef"], image: "images/hakka_noodles.jpg", badge: "Gourmet Asian", description: "Wheat noodles tossed over high flame with crunchy bell peppers, garlic & pure sesame oil." },
+  { id: "ramen-07", name: "Artisan Vegetarian Ramen", category: "asian-gourmet", price: 190, tags: ["chef"], image: "images/ramen.jpg", badge: "Signature Bowl", description: "Miso-shiitake broth with hand-pulled noodles, braised tofu, bok choy, and mushrooms." },
+  { id: "dosa-08", name: "Mysore Masala Dosa", category: "south-indian", price: 135, tags: ["spicy", "jain"], image: "images/masala_dosa.jpg", badge: "Crispy Delight", description: "Fermented crepe layered with spicy chutney and potato mash, served with sambar." },
+  { id: "gulab-09", name: "Shahi Gulab Jamun", category: "desserts", price: 70, tags: ["mild", "jain"], image: "images/gulab_jamun.jpg", badge: "Sweet Legacy", description: "Golden khoya dumplings in pure desi ghee, soaked in warm Kashmiri saffron rose syrup." },
+  { id: "rasmalai-10", name: "Kesar Pista Rasmalai", category: "desserts", price: 90, tags: ["mild", "jain"], image: "images/rasmalai.jpg", badge: "Royal Sweet", description: "Cottage cheese patties in thickened saffron milk, garnished with Persian pistachios." },
+  { id: "sundae-11", name: "Belgian Hot Fudge Sundae", category: "desserts", price: 140, tags: ["mild"], image: "images/sundae.jpg", badge: "Lounge Dessert", description: "Vanilla bean gelato drenched in warm 70% dark Belgian cocoa fudge and roasted almonds." },
+  { id: "shake-12", name: "Strawberry Milkshake", category: "beverages", price: 130, tags: ["mild", "jain"], image: "images/strawberry_shake.jpg", badge: "Chilled Sip", description: "Fresh farm strawberry puree churned with organic milk and fresh cream crown." }
 ];
 
 let cart = [];
-try {
-  const savedCart = localStorage.getItem("saffron_order_cart");
-  if (savedCart) {
-    cart = JSON.parse(savedCart);
-  }
-} catch (e) {
-  cart = [];
-}
-
 let activeCategory = "all";
 let activeDietTag = null;
 let searchQuery = "";
 let discountAmount = 0;
-let appliedPromoCode = "";
 
-const menuGridEl = document.getElementById("menu-items-grid");
-const noResultsEl = document.getElementById("no-results-box");
-const resultsCountEl = document.getElementById("results-count");
-const categoryTitleEl = document.getElementById("current-category-title");
-const searchInput = document.getElementById("menu-search-input");
-const searchClearBtn = document.getElementById("search-clear-btn");
-const cartDrawer = document.getElementById("cart-drawer");
-const cartBackdrop = document.getElementById("cart-backdrop");
-const openCartBtn = document.getElementById("open-cart-btn");
-const closeCartBtn = document.getElementById("close-cart-btn");
-const emptyCartBrowseBtn = document.getElementById("empty-cart-browse-btn");
-const cartItemsListEl = document.getElementById("cart-items-list");
-const cartEmptyStateEl = document.getElementById("cart-empty-state");
-const cartCounterEl = document.getElementById("cart-counter");
-const cartQuickTotalEl = document.getElementById("cart-quick-total");
-const cartSummarySubtitleEl = document.getElementById("cart-summary-subtitle");
-const billSubtotalEl = document.getElementById("bill-subtotal");
-const billDiscountEl = document.getElementById("bill-discount");
-const billDeliveryEl = document.getElementById("bill-delivery");
-const billTaxEl = document.getElementById("bill-tax");
-const billTotalEl = document.getElementById("bill-total");
-const rowDiscountEl = document.getElementById("row-discount");
-const promoCodeInput = document.getElementById("promo-code-input");
-const applyPromoBtn = document.getElementById("apply-promo-btn");
-const promoFeedbackMsg = document.getElementById("promo-feedback-msg");
-const proceedCheckoutBtn = document.getElementById("proceed-checkout-btn");
-const checkoutModal = document.getElementById("checkout-modal");
-const closeModalBtn = document.getElementById("close-modal-btn");
-const checkoutForm = document.getElementById("checkout-form");
-const modalPayableAmount = document.getElementById("modal-payable-amount");
-const orderSuccessModal = document.getElementById("order-success-modal");
-const continueShoppingBtn = document.getElementById("continue-shopping-btn");
-const toastNotifyEl = document.getElementById("toast-notify");
+function loadCart() {
+  try { cart = JSON.parse(localStorage.getItem('saffron_cart') || '[]'); }
+  catch (e) { cart = []; }
+}
 
 function saveCart() {
-  try {
-    localStorage.setItem("saffron_order_cart", JSON.stringify(cart));
-    window.dispatchEvent(new Event("cartUpdated"));
-  } catch (e) {}
+  localStorage.setItem('saffron_cart', JSON.stringify(cart));
 }
 
-function showToast(message) {
-  toastNotifyEl.textContent = message;
-  toastNotifyEl.classList.add("show");
-  clearTimeout(showToast.timer);
-  showToast.timer = setTimeout(() => {
-    toastNotifyEl.classList.remove("show");
-  }, 2800);
+function downloadJsonFile(data, filename) {
+  const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = filename;
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  URL.revokeObjectURL(a.href);
 }
 
-function getFilteredMenu() {
-  return MENU_ITEMS.filter(item => {
-    const matchesCategory = activeCategory === "all" || item.category === activeCategory;
-    const matchesDiet = !activeDietTag || (item.tags && item.tags.includes(activeDietTag));
-    const term = searchQuery.toLowerCase().trim();
-    const matchesSearch = !term ||
-      item.name.toLowerCase().includes(term) ||
-      item.description.toLowerCase().includes(term) ||
-      item.badge.toLowerCase().includes(term);
-    return matchesCategory && matchesDiet && matchesSearch;
-  });
+function showToast(msg) {
+  const toast = document.getElementById("toast-notify");
+  if (!toast) return;
+  toast.textContent = msg;
+  toast.classList.add("visible");
+  setTimeout(() => toast.classList.remove("visible"), 2200);
 }
 
 function renderMenu() {
-  const items = getFilteredMenu();
-  resultsCountEl.textContent = `${items.length} ${items.length === 1 ? "Item" : "Items"}`;
+  const grid = document.getElementById("menu-items-grid");
+  const noRes = document.getElementById("no-results-box");
+  const countEl = document.getElementById("results-count");
+  if (!grid) return;
 
-  if (items.length === 0) {
-    menuGridEl.innerHTML = "";
-    noResultsEl.hidden = false;
+  const filtered = MENU_ITEMS.filter(item => {
+    const matchCat = activeCategory === "all" || item.category === activeCategory;
+    const matchTag = !activeDietTag || item.tags.includes(activeDietTag);
+    const matchSearch = !searchQuery || 
+      item.name.toLowerCase().includes(searchQuery) || 
+      item.description.toLowerCase().includes(searchQuery);
+    return matchCat && matchTag && matchSearch;
+  });
+
+  if (countEl) countEl.textContent = `${filtered.length} Items`;
+
+  if (filtered.length === 0) {
+    grid.innerHTML = "";
+    if (noRes) noRes.hidden = false;
     return;
   }
+  if (noRes) noRes.hidden = true;
 
-  noResultsEl.hidden = true;
-  menuGridEl.innerHTML = items.map(dish => {
-    const cartItem = cart.find(c => c.id === dish.id);
-    const inCartQty = cartItem ? cartItem.qty : 0;
-
-    let buttonMarkup = "";
-    if (inCartQty > 0) {
-      buttonMarkup = `
-        <div class="qty-control-group">
-          <button class="qty-btn" type="button" data-action="decrement" data-id="${dish.id}" aria-label="Decrease">&minus;</button>
-          <span class="qty-display">${inCartQty}</span>
-          <button class="qty-btn" type="button" data-action="increment" data-id="${dish.id}" aria-label="Increase">&#43;</button>
-        </div>
-      `;
-    } else {
-      buttonMarkup = `
-        <button class="add-cart-btn" type="button" data-action="add" data-id="${dish.id}">
-          &#43; Add To Feast
-        </button>
-      `;
-    }
-
+  grid.innerHTML = filtered.map(item => {
+    const inCart = cart.find(c => c.id === item.id);
+    const qty = inCart ? inCart.quantity : 0;
     return `
-      <article class="food-card" data-dish-id="${dish.id}">
-        <div class="food-card-img-wrap">
-          <img src="${dish.image}" alt="${dish.name}" class="food-card-img" loading="lazy">
-          <span class="food-badge">${dish.badge}</span>
-          <div class="food-veg-symbol" title="100% Pure Vegetarian"></div>
+      <article class="food-card" data-id="${item.id}">
+        <div class="card-media">
+          <img src="${item.image}" alt="${item.name}" loading="lazy">
+          <span class="card-badge">${item.badge}</span>
         </div>
-        <div class="food-card-body">
-          <span class="food-category-label">${dish.category.replace("-", " ")}</span>
-          <h3 class="food-title">${dish.name}</h3>
-          <p class="food-desc">${dish.description}</p>
-          <div class="food-card-footer">
-            <span class="food-price">&#8377;${dish.price}</span>
-            <div class="food-action-slot">
-              ${buttonMarkup}
-            </div>
+        <div class="card-body">
+          <div class="card-title-row">
+            <h3>${item.name}</h3>
+            <span class="card-price">₹${item.price}</span>
+          </div>
+          <p class="card-desc">${item.description}</p>
+          <div class="card-actions">
+            ${qty > 0 ? `
+              <div class="qty-pill">
+                <button class="qty-btn" onclick="updateItemQty('${item.id}', -1)">−</button>
+                <span>${qty}</span>
+                <button class="qty-btn" onclick="updateItemQty('${item.id}', 1)">+</button>
+              </div>
+            ` : `
+              <button class="btn outline add-btn" onclick="addToCart('${item.id}')">ADD TO CART</button>
+            `}
           </div>
         </div>
       </article>
@@ -275,331 +104,279 @@ function renderMenu() {
   }).join("");
 }
 
+window.addToCart = function(id) {
+  const item = MENU_ITEMS.find(m => m.id === id);
+  if (!item) return;
+  const existing = cart.find(c => c.id === id);
+  if (existing) { existing.quantity++; }
+  else { cart.push({ ...item, quantity: 1 }); }
+  saveCart();
+  renderCart();
+  renderMenu();
+  showToast(`Added ${item.name} to cart`);
+};
+
+window.updateItemQty = function(id, delta) {
+  const idx = cart.findIndex(c => c.id === id);
+  if (idx === -1) return;
+  cart[idx].quantity += delta;
+  if (cart[idx].quantity <= 0) cart.splice(idx, 1);
+  saveCart();
+  renderCart();
+  renderMenu();
+};
+
+window.removeCartItem = function(id) {
+  cart = cart.filter(c => c.id !== id);
+  saveCart();
+  renderCart();
+  renderMenu();
+};
+
 function renderCart() {
-  const totalCount = cart.reduce((sum, item) => sum + item.qty, 0);
-  const subtotal = cart.reduce((sum, item) => sum + (item.price * item.qty), 0);
+  const listEl = document.getElementById("cart-items-list");
+  const emptyEl = document.getElementById("cart-empty-state");
+  const subtotalEl = document.getElementById("bill-subtotal");
+  const deliveryEl = document.getElementById("bill-delivery");
+  const taxEl = document.getElementById("bill-tax");
+  const totalEl = document.getElementById("bill-total");
+  const counterEl = document.getElementById("cart-counter");
+  const quickTotalEl = document.getElementById("cart-quick-total");
+  const summarySub = document.getElementById("cart-summary-subtitle");
 
-  cartCounterEl.textContent = totalCount;
-  cartQuickTotalEl.textContent = `₹${subtotal}`;
-  cartSummarySubtitleEl.textContent = `${totalCount} ${totalCount === 1 ? "item" : "items"} selected`;
+  const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+  const subtotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+  const delivery = totalItems > 0 ? 40 : 0;
+  const tax = Math.round(subtotal * 0.05);
+  const grandTotal = Math.max(0, subtotal - discountAmount + delivery + tax);
 
-  if (cart.length === 0) {
-    cartEmptyStateEl.style.display = "block";
-    cartItemsListEl.innerHTML = "";
-    discountAmount = 0;
-    appliedPromoCode = "";
-    promoFeedbackMsg.textContent = "";
-    promoFeedbackMsg.className = "promo-feedback";
-    promoCodeInput.value = "";
-    rowDiscountEl.hidden = true;
-    proceedCheckoutBtn.disabled = true;
-    proceedCheckoutBtn.style.opacity = "0.6";
+  if (counterEl) counterEl.textContent = totalItems;
+  if (quickTotalEl) quickTotalEl.textContent = `₹${grandTotal}`;
+  if (summarySub) summarySub.textContent = `${totalItems} item${totalItems !== 1 ? 's' : ''} selected`;
+
+  if (totalItems === 0) {
+    if (emptyEl) emptyEl.hidden = false;
+    if (listEl) listEl.innerHTML = "";
   } else {
-    cartEmptyStateEl.style.display = "none";
-    proceedCheckoutBtn.disabled = false;
-    proceedCheckoutBtn.style.opacity = "1";
-
-    cartItemsListEl.innerHTML = cart.map(item => `
-      <div class="cart-item-row" data-id="${item.id}">
-        <img src="${item.image}" alt="${item.name}" class="cart-item-thumb">
-        <div class="cart-item-info">
-          <h4 class="cart-item-title">${item.name}</h4>
-          <span class="cart-item-price">&#8377;${item.price} &times; ${item.qty} = &#8377;${item.price * item.qty}</span>
-        </div>
-        <div class="cart-item-actions">
-          <div class="qty-control-group">
-            <button class="qty-btn" type="button" data-action="cart-decrement" data-id="${item.id}">&minus;</button>
-            <span class="qty-display">${item.qty}</span>
-            <button class="qty-btn" type="button" data-action="cart-increment" data-id="${item.id}">&#43;</button>
+    if (emptyEl) emptyEl.hidden = true;
+    if (listEl) {
+      listEl.innerHTML = cart.map(item => `
+        <div class="cart-item-row">
+          <img src="${item.image}" alt="${item.name}">
+          <div class="cart-item-info">
+            <h4>${item.name}</h4>
+            <span class="cart-item-price">₹${item.price} each</span>
+            <div class="qty-pill">
+              <button class="qty-btn" onclick="updateItemQty('${item.id}', -1)">−</button>
+              <span>${item.quantity}</span>
+              <button class="qty-btn" onclick="updateItemQty('${item.id}', 1)">+</button>
+            </div>
           </div>
+          <button class="cart-item-remove" onclick="removeCartItem('${item.id}')" title="Remove">&times;</button>
         </div>
-      </div>
-    `).join("");
+      `).join("");
+    }
   }
 
-  const deliveryFee = subtotal > 400 || subtotal === 0 ? 0 : 40;
-  const taxableAmount = Math.max(0, subtotal - discountAmount);
-  const taxes = Math.round(taxableAmount * 0.05);
-  const grandTotal = subtotal === 0 ? 0 : taxableAmount + deliveryFee + taxes;
+  if (subtotalEl) subtotalEl.textContent = `₹${subtotal}`;
+  if (deliveryEl) deliveryEl.textContent = `₹${delivery}`;
+  if (taxEl) taxEl.textContent = `₹${tax}`;
+  if (totalEl) totalEl.textContent = `₹${grandTotal}`;
 
-  billSubtotalEl.textContent = `₹${subtotal}`;
-  billDeliveryEl.textContent = subtotal === 0 ? "₹0" : (deliveryFee === 0 ? "FREE" : `₹${deliveryFee}`);
-  billTaxEl.textContent = `₹${taxes}`;
-  billTotalEl.textContent = `₹${grandTotal}`;
-  modalPayableAmount.textContent = `₹${grandTotal}`;
-
-  if (discountAmount > 0) {
-    rowDiscountEl.hidden = false;
-    billDiscountEl.textContent = `-₹${discountAmount}`;
-  } else {
-    rowDiscountEl.hidden = true;
-  }
+  const payModalTotal = document.getElementById("modal-payable-amount");
+  if (payModalTotal) payModalTotal.textContent = `₹${grandTotal}`;
 }
 
-function addToCart(dishId) {
-  const dish = MENU_ITEMS.find(d => d.id === dishId);
-  if (!dish) return;
+document.addEventListener("DOMContentLoaded", () => {
+  loadCart();
+  renderMenu();
+  renderCart();
 
-  const existing = cart.find(c => c.id === dishId);
-  if (existing) {
-    existing.qty += 1;
-  } else {
-    cart.push({
-      id: dish.id,
-      name: dish.name,
-      price: dish.price,
-      image: dish.image,
-      qty: 1
+  // Search
+  const searchInput = document.getElementById("menu-search-input");
+  const clearBtn = document.getElementById("search-clear-btn");
+  if (searchInput) {
+    searchInput.addEventListener("input", (e) => {
+      searchQuery = e.target.value.trim().toLowerCase();
+      renderMenu();
+    });
+  }
+  if (clearBtn && searchInput) {
+    clearBtn.addEventListener("click", () => {
+      searchInput.value = "";
+      searchQuery = "";
+      renderMenu();
     });
   }
 
-  saveCart();
-  renderCart();
-  renderMenu();
-  showToast(`Added ${dish.name} to order`);
-}
-
-function updateCartQty(dishId, delta) {
-  const index = cart.findIndex(c => c.id === dishId);
-  if (index === -1) return;
-
-  cart[index].qty += delta;
-  if (cart[index].qty <= 0) {
-    const removedName = cart[index].name;
-    cart.splice(index, 1);
-    showToast(`Removed ${removedName}`);
-  }
-
-  saveCart();
-  renderCart();
-  renderMenu();
-}
-
-function openCart() {
-  cartDrawer.classList.add("open");
-  cartBackdrop.classList.add("active");
-  document.body.style.overflow = "hidden";
-}
-
-function closeCart() {
-  cartDrawer.classList.remove("open");
-  cartBackdrop.classList.remove("active");
-  document.body.style.overflow = "";
-}
-
-function applyCoupon() {
-  const code = promoCodeInput.value.trim().toUpperCase();
-  const subtotal = cart.reduce((sum, item) => sum + (item.price * item.qty), 0);
-
-  if (subtotal === 0) {
-    promoFeedbackMsg.textContent = "Please add items to your cart first.";
-    promoFeedbackMsg.className = "promo-feedback error";
-    return;
-  }
-
-  if (code === "SAFFRON20") {
-    discountAmount = Math.round(subtotal * 0.20);
-    appliedPromoCode = "SAFFRON20";
-    promoFeedbackMsg.textContent = "20% Royal Discount Applied!";
-    promoFeedbackMsg.className = "promo-feedback success";
-    showToast("20% Discount unlocked!");
-  } else if (code === "ROYAL50") {
-    discountAmount = 50;
-    appliedPromoCode = "ROYAL50";
-    promoFeedbackMsg.textContent = "₹50 Saffron Credit Applied!";
-    promoFeedbackMsg.className = "promo-feedback success";
-    showToast("₹50 Discount unlocked!");
-  } else {
-    discountAmount = 0;
-    appliedPromoCode = "";
-    promoFeedbackMsg.textContent = "Invalid code. Try SAFFRON20 or ROYAL50.";
-    promoFeedbackMsg.className = "promo-feedback error";
-  }
-
-  renderCart();
-}
-
-menuGridEl.addEventListener("click", e => {
-  const target = e.target.closest("button");
-  if (!target) return;
-
-  const action = target.dataset.action;
-  const id = target.dataset.id;
-
-  if (action === "add" || action === "increment") {
-    addToCart(id);
-  } else if (action === "decrement") {
-    updateCartQty(id, -1);
-  }
-});
-
-cartItemsListEl.addEventListener("click", e => {
-  const target = e.target.closest("button");
-  if (!target) return;
-
-  const action = target.dataset.action;
-  const id = target.dataset.id;
-
-  if (action === "cart-increment") {
-    updateCartQty(id, 1);
-  } else if (action === "cart-decrement") {
-    updateCartQty(id, -1);
-  }
-});
-
-openCartBtn.addEventListener("click", openCart);
-closeCartBtn.addEventListener("click", closeCart);
-cartBackdrop.addEventListener("click", closeCart);
-emptyCartBrowseBtn.addEventListener("click", () => {
-  closeCart();
-  window.scrollTo({ top: 300, behavior: "smooth" });
-});
-
-applyPromoBtn.addEventListener("click", applyCoupon);
-promoCodeInput.addEventListener("keydown", e => {
-  if (e.key === "Enter") {
-    e.preventDefault();
-    applyCoupon();
-  }
-});
-
-document.querySelectorAll(".cat-pill").forEach(pill => {
-  pill.addEventListener("click", () => {
-    document.querySelectorAll(".cat-pill").forEach(p => p.classList.remove("active"));
-    pill.classList.add("active");
-    activeCategory = pill.dataset.category;
-    categoryTitleEl.textContent = pill.textContent;
-    renderMenu();
+  // Categories
+  document.querySelectorAll(".cat-pill").forEach(btn => {
+    btn.addEventListener("click", () => {
+      document.querySelectorAll(".cat-pill").forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      activeCategory = btn.dataset.category || "all";
+      const title = document.getElementById("current-category-title");
+      if (title) title.textContent = btn.textContent;
+      renderMenu();
+    });
   });
-});
 
-document.querySelectorAll(".diet-tag").forEach(tag => {
-  tag.addEventListener("click", () => {
-    const selected = tag.dataset.tag;
-    if (activeDietTag === selected) {
-      tag.classList.remove("active");
-      activeDietTag = null;
-    } else {
-      document.querySelectorAll(".diet-tag").forEach(t => t.classList.remove("active"));
-      tag.classList.add("active");
-      activeDietTag = selected;
-    }
-    renderMenu();
+  // Dietary tags
+  document.querySelectorAll(".diet-tag").forEach(tag => {
+    tag.addEventListener("click", () => {
+      if (activeDietTag === tag.dataset.tag) {
+        tag.classList.remove("active");
+        activeDietTag = null;
+      } else {
+        document.querySelectorAll(".diet-tag").forEach(t => t.classList.remove("active"));
+        tag.classList.add("active");
+        activeDietTag = tag.dataset.tag;
+      }
+      renderMenu();
+    });
   });
-});
 
-searchInput.addEventListener("input", e => {
-  searchQuery = e.target.value;
-  const parent = searchInput.parentElement;
-  if (searchQuery.length > 0) {
-    parent.classList.add("has-text");
-  } else {
-    parent.classList.remove("has-text");
+  // Drawer
+  const drawer = document.getElementById("cart-drawer");
+  const backdrop = document.getElementById("cart-backdrop");
+  const openCartBtn = document.getElementById("open-cart-btn");
+  const closeCartBtn = document.getElementById("close-cart-btn");
+
+  const toggleCart = (open) => {
+    if (drawer) drawer.classList.toggle("open", open);
+    if (backdrop) backdrop.classList.toggle("open", open);
+  };
+
+  if (openCartBtn) openCartBtn.addEventListener("click", () => toggleCart(true));
+  if (closeCartBtn) closeCartBtn.addEventListener("click", () => toggleCart(false));
+  if (backdrop) backdrop.addEventListener("click", () => toggleCart(false));
+
+  // Promo code
+  const applyPromoBtn = document.getElementById("apply-promo-btn");
+  const promoInput = document.getElementById("promo-code-input");
+  const promoMsg = document.getElementById("promo-feedback-msg");
+  const rowDiscount = document.getElementById("row-discount");
+  const billDiscount = document.getElementById("bill-discount");
+
+  if (applyPromoBtn && promoInput) {
+    applyPromoBtn.addEventListener("click", () => {
+      const code = promoInput.value.trim().toUpperCase();
+      const subtotal = cart.reduce((sum, it) => sum + (it.price * it.quantity), 0);
+      if (code === "SAFFRON20" || code === "ROYAL10") {
+        const pct = code === "SAFFRON20" ? 0.20 : 0.10;
+        discountAmount = Math.round(subtotal * pct);
+        if (rowDiscount) rowDiscount.hidden = false;
+        if (billDiscount) billDiscount.textContent = `-₹${discountAmount}`;
+        if (promoMsg) {
+          promoMsg.style.color = "var(--gold)";
+          promoMsg.textContent = `Promo ${code} applied successfully!`;
+        }
+      } else {
+        discountAmount = 0;
+        if (rowDiscount) rowDiscount.hidden = true;
+        if (promoMsg) {
+          promoMsg.style.color = "#f87171";
+          promoMsg.textContent = "Invalid promo code. Try SAFFRON20";
+        }
+      }
+      renderCart();
+    });
   }
-  renderMenu();
-});
 
-searchClearBtn.addEventListener("click", () => {
-  searchInput.value = "";
-  searchQuery = "";
-  searchInput.parentElement.classList.remove("has-text");
-  renderMenu();
-  searchInput.focus();
-});
+  // Checkout modal
+  const checkoutModal = document.getElementById("checkout-modal");
+  const proceedBtn = document.getElementById("proceed-checkout-btn");
+  const closeModalBtn = document.getElementById("close-modal-btn");
+  const checkoutForm = document.getElementById("checkout-form");
+  const successModal = document.getElementById("order-success-modal");
 
-document.getElementById("reset-filters-btn").addEventListener("click", () => {
-  activeCategory = "all";
-  activeDietTag = null;
-  searchQuery = "";
-  searchInput.value = "";
-  searchInput.parentElement.classList.remove("has-text");
-  document.querySelectorAll(".cat-pill").forEach(p => p.classList.remove("active"));
-  document.querySelector('.cat-pill[data-category="all"]').classList.add("active");
-  document.querySelectorAll(".diet-tag").forEach(t => t.classList.remove("active"));
-  categoryTitleEl.textContent = "All Delicacies";
-  renderMenu();
-});
+  if (proceedBtn) {
+    proceedBtn.addEventListener("click", () => {
+      if (cart.length === 0) {
+        showToast("Your cart is empty!");
+        return;
+      }
+      toggleCart(false);
+      if (checkoutModal) checkoutModal.showModal();
+    });
+  }
 
-const deliveryBtn = document.getElementById("btn-delivery");
-const pickupBtn = document.getElementById("btn-pickup");
-const locationLabel = document.getElementById("delivery-location-label");
+  if (closeModalBtn && checkoutModal) {
+    closeModalBtn.addEventListener("click", () => checkoutModal.close());
+  }
 
-deliveryBtn.addEventListener("click", () => {
-  deliveryBtn.classList.add("active");
-  pickupBtn.classList.remove("active");
-  locationLabel.textContent = "Delivering to: Greater Kailash II, New Delhi";
-});
+  // Order submission
+  if (checkoutForm) {
+    checkoutForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const name = document.getElementById("cust-name")?.value.trim() || "";
+      const phone = document.getElementById("cust-phone")?.value.trim() || "";
+      const address = document.getElementById("cust-address")?.value.trim() || "";
+      const time = document.getElementById("cust-time")?.value || "Immediate";
+      const notes = document.getElementById("order-notes")?.value.trim() || "";
 
-pickupBtn.addEventListener("click", () => {
-  pickupBtn.classList.add("active");
-  deliveryBtn.classList.remove("active");
-  locationLabel.textContent = "Pickup: The Saffron Plate Flagship, M-Block Market, GK-II";
-});
+      if (!name || phone.replace(/\D/g, "").length < 10 || !address) {
+        alert("Please enter a valid name, 10-digit phone number, and address.");
+        return;
+      }
 
-document.getElementById("change-address-btn").addEventListener("click", () => {
-  const newAddr = prompt("Enter delivery address or landmark in Delhi NCR:", "Greater Kailash II, New Delhi");
-  if (newAddr && newAddr.trim()) {
-    locationLabel.textContent = `Delivering to: ${newAddr.trim()}`;
-    const custAddrInput = document.getElementById("cust-address");
-    if (custAddrInput) custAddrInput.value = newAddr.trim();
+      const orderRef = "SP-" + Math.floor(10000 + Math.random() * 90000);
+      const subtotal = cart.reduce((s, it) => s + (it.price * it.quantity), 0);
+      const tax = Math.round(subtotal * 0.05);
+      const total = Math.max(0, subtotal - discountAmount + 40 + tax);
+
+      const orderData = {
+        orderId: `#${orderRef}`,
+        placedAt: new Date().toLocaleString(),
+        customer: { name, phone, address, deliverySlot: time },
+        items: [...cart],
+        bill: { subtotal: `₹${subtotal}`, discount: `₹${discountAmount}`, deliveryFee: "₹40", taxGst: `₹${tax}`, totalPaid: `₹${total}` },
+        notes
+      };
+
+      try {
+        const orders = JSON.parse(localStorage.getItem("saffron_orders") || "[]");
+        orders.push(orderData);
+        localStorage.setItem("saffron_orders", JSON.stringify(orders, null, 2));
+      } catch (err) {
+        console.error("Order save error:", err);
+      }
+
+      downloadJsonFile(orderData, `order_${orderRef}.json`);
+
+      cart = [];
+      discountAmount = 0;
+      saveCart();
+      renderCart();
+      renderMenu();
+
+      if (checkoutModal) checkoutModal.close();
+
+      const refCodeEl = document.getElementById("order-ref-code");
+      const confNameEl = document.getElementById("confirmed-name");
+      const confAddrEl = document.getElementById("confirmed-address");
+      const confTotalEl = document.getElementById("confirmed-total");
+
+      if (refCodeEl) refCodeEl.textContent = `#${orderRef}`;
+      if (confNameEl) confNameEl.textContent = name;
+      if (confAddrEl) confAddrEl.textContent = address;
+      if (confTotalEl) confTotalEl.textContent = `₹${total}`;
+
+      if (successModal) successModal.showModal();
+    });
+  }
+
+  const contBtn = document.getElementById("continue-shopping-btn");
+  if (contBtn && successModal) {
+    contBtn.addEventListener("click", () => successModal.close());
+  }
+
+  const exportBtn = document.getElementById("export-orders-btn");
+  if (exportBtn) {
+    exportBtn.addEventListener("click", () => {
+      const orders = JSON.parse(localStorage.getItem("saffron_orders") || "[]");
+      if (orders.length === 0) alert("No orders placed yet to export.");
+      else downloadJsonFile(orders, "saffron_orders.json");
+    });
   }
 });
-
-proceedCheckoutBtn.addEventListener("click", () => {
-  if (cart.length === 0) return;
-  closeCart();
-  checkoutModal.showModal();
-});
-
-closeModalBtn.addEventListener("click", () => {
-  checkoutModal.close();
-});
-
-document.querySelectorAll(".payment-radio-card").forEach(card => {
-  card.addEventListener("click", () => {
-    document.querySelectorAll(".payment-radio-card").forEach(c => c.classList.remove("active"));
-    card.classList.add("active");
-    const radio = card.querySelector('input[type="radio"]');
-    if (radio) radio.checked = true;
-  });
-});
-
-checkoutForm.addEventListener("submit", e => {
-  e.preventDefault();
-  const name = document.getElementById("cust-name").value;
-  const address = document.getElementById("cust-address").value;
-  const payable = modalPayableAmount.textContent;
-  const randomRef = "#SP-" + Math.floor(10000 + Math.random() * 90000);
-
-  checkoutModal.close();
-
-  document.getElementById("order-ref-code").textContent = randomRef;
-  document.getElementById("confirmed-name").textContent = name;
-  document.getElementById("confirmed-address").textContent = address;
-  document.getElementById("confirmed-total").textContent = payable;
-
-  cart = [];
-  discountAmount = 0;
-  appliedPromoCode = "";
-  saveCart();
-  renderCart();
-  renderMenu();
-
-  orderSuccessModal.showModal();
-});
-
-continueShoppingBtn.addEventListener("click", () => {
-  orderSuccessModal.close();
-  window.scrollTo({ top: 300, behavior: "smooth" });
-});
-
-document.addEventListener("keydown", e => {
-  if (e.key === "Escape") {
-    if (cartDrawer.classList.contains("open")) {
-      closeCart();
-    }
-  }
-});
-
-renderMenu();
-renderCart();

@@ -3,154 +3,67 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Order Online — The Saffron Plate | Pure Vegetarian Kitchen</title>
+  <title>Menu &amp; Order Online — The Saffron Plate</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Cormorant+Garamond:ital,wght@0,500;1,400;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="order.css">
 </head>
 <body>
-  <header class="site-header navbar-overlay" id="siteHeader">
-    <div class="nav-inner">
-      <nav class="nav-menu-list left" aria-label="Main Navigation Left">
-        <a href="index.html">Home</a>
-        <a href="index.html#menu">Menu</a>
-        <a href="order.html" class="active nav-order-link">
-          <span class="nav-pulse-dot" aria-hidden="true"></span>
-          Order Online
-        </a>
-        <a href="reservation.html">Reservations</a>
-      </nav>
-
-      <a href="index.html" class="brand-center" aria-label="The Saffron Plate Home">
-        <div class="brand-crest">
-          <svg class="brand-crest-svg" width="28" height="22" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <path d="M16 1L19.5 9L27 3L23.5 16H8.5L5 3L12.5 9L16 1Z" stroke="url(#goldGradOrder)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-            <circle cx="16" cy="1" r="1.5" fill="#C9A227"/>
-            <circle cx="27" cy="3" r="1.5" fill="#C9A227"/>
-            <circle cx="5" cy="3" r="1.5" fill="#C9A227"/>
-            <path d="M7 19.5C11.5 22 20.5 22 25 19.5" stroke="url(#goldGradOrder)" stroke-width="1.6" stroke-linecap="round"/>
-            <circle cx="16" cy="19.5" r="1.8" fill="url(#goldGradOrder)"/>
-            <defs>
-              <linearGradient id="goldGradOrder" x1="0" y1="0" x2="32" y2="24" gradientUnits="userSpaceOnUse">
-                <stop offset="0%" stop-color="#E5C058"/>
-                <stop offset="50%" stop-color="#C9A227"/>
-                <stop offset="100%" stop-color="#9A7818"/>
-              </linearGradient>
-            </defs>
-          </svg>
+  <!-- Balanced Site Header -->
+  <header class="site-header">
+    <nav class="navbar-overlay">
+      <div class="nav-inner">
+        <div class="nav-menu-list left">
+          <a href="index.html">Home</a>
+          <a href="order.html" class="active">Menu &amp; Order</a>
+          <a href="reservation.html">Reservations</a>
         </div>
-        <span class="brand-name">THE SAFFRON PLATE</span>
-        <span class="brand-sub">FINE DINING &amp; GOURMET KITCHEN</span>
-      </a>
-
-      <nav class="nav-menu-list right" aria-label="Main Navigation Right">
-        <a href="gallery.html">Gallery</a>
-        <a href="about.html">About Us</a>
-        <a href="team.html">Our Team</a>
-        <a href="contact.html">Contact</a>
-        <div class="nav-dropdown" id="navAccountDropdown">
-          <button type="button" class="nav-dropdown-trigger" id="navDropdownTrigger" aria-expanded="false" aria-haspopup="true">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-            <span>Account</span>
-            <span class="nav-cart-count">0</span>
-            <svg class="dropdown-chevron" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
-          </button>
-          <div class="nav-dropdown-menu" id="navDropdownMenu">
-            <a href="auth.html" class="dropdown-item">
-              <span class="dropdown-item-left">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path><polyline points="10 17 15 12 10 7"></polyline><line x1="15" y1="12" x2="3" y2="12"></line></svg>
-                <span>Sign In / Register</span>
-              </span>
-            </a>
-            <div class="dropdown-divider"></div>
-            <a href="order.html#cart" class="dropdown-item">
-              <span class="dropdown-item-left">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
-                <span>View Cart</span>
-              </span>
-              <span class="nav-cart-count">0</span>
-            </a>
-          </div>
-        </div>
-      </nav>
-
-      <div class="nav-mobile-actions">
-        <a href="#cart-sidebar" class="nav-cart-btn mobile-cart-btn" aria-label="View Shopping Cart">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <circle cx="9" cy="21" r="1"></circle>
-            <circle cx="20" cy="21" r="1"></circle>
-            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
-          </svg>
-          <span class="nav-cart-count">0</span>
+        <a href="index.html" class="brand-center">
+          <span class="brand-name">THE SAFFRON PLATE</span>
+          <span class="brand-sub">FINE DINING &amp; GOURMET KITCHEN</span>
         </a>
-        <button type="button" class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Open mobile navigation" aria-expanded="false" aria-controls="mobileNavDrawer">
-          <span></span>
-          <span></span>
-          <span></span>
+        <div class="nav-menu-list right">
+          <a href="about.html">About Us</a>
+          <a href="team.html">Our Team</a>
+          <a href="contact.html">Contact</a>
+          <a href="auth.html" class="nav-auth-btn">Sign In</a>
+        </div>
+        <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle Menu">
+          <span></span><span></span><span></span>
         </button>
       </div>
-    </div>
-  </header>
-  <div class="mobile-nav-backdrop" id="mobileNavBackdrop"></div>
-  <aside class="mobile-nav-drawer" id="mobileNavDrawer" aria-label="Mobile Navigation Menu">
-    <div class="mobile-drawer-header">
-      <div class="brand-crest">
-        <svg width="24" height="18" viewBox="0 0 32 24" fill="none" stroke="var(--gold)" stroke-width="1.8" aria-hidden="true">
-          <path d="M16 1L19.5 9L27 3L23.5 16H8.5L5 3L12.5 9L16 1Z"/>
-        </svg>
+      <div class="mobile-nav-menu" id="mobileNavMenu">
+        <a href="index.html">Home</a>
+        <a href="order.html" class="active">Menu &amp; Order</a>
+        <a href="reservation.html">Reservations</a>
+        <a href="about.html">Our Heritage</a>
+        <a href="team.html">Culinary Team</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="auth.html">Sign In</a>
       </div>
-      <span class="drawer-brand-title">THE SAFFRON PLATE</span>
-      <button type="button" class="mobile-nav-close" id="mobileNavClose" aria-label="Close menu">&times;</button>
-    </div>
-
-    <nav class="mobile-drawer-links">
-      <a href="index.html">Home</a>
-      <a href="index.html#menu">Our Menu</a>
-      <a href="order.html" class="active drawer-order-highlight">
-        <span>Order Online</span>
-        <span class="drawer-badge">Live</span>
-      </a>
-      <a href="reservation.html">Table Reservations</a>
-      <a href="gallery.html">Dining Gallery</a>
-      <a href="about.html">About Heritage</a>
-      <a href="team.html">Master Chefs &amp; Team</a>
-      <a href="contact.html">Contact &amp; Location</a>
-      <a href="auth.html">Sign In / Register</a>
     </nav>
-
-    <div class="mobile-drawer-actions">
-      <a href="order.html" class="btn solid mobile-drawer-btn">Order Online</a>
-      <a href="reservation.html" class="btn outline mobile-drawer-btn">Reserve a Table</a>
-    </div>
-
-    <div class="mobile-drawer-footer">
-      <p class="drawer-hours">Open Daily: 12:00 PM – 11:30 PM</p>
-      <p class="drawer-phone">Concierge: +91 11 4987 6543</p>
-    </div>
-  </aside>
+  </header>
 
   <main class="order-page-wrapper">
+    <!-- Order Hero -->
     <section class="order-hero">
       <div class="order-hero-content">
-        <span class="eyebrow">FINE VEGETARIAN GASTRONOMY AT HOME</span>
+        <span class="eyebrow">ROYAL VEGETARIAN DELICACIES</span>
         <h1>ORDER <em>ONLINE</em></h1>
-        <p>Savor our award-winning royal Indian recipes, freshly cooked with cold-pressed oils, hand-ground spices, and organic produce.</p>
+        <p>Savor our award-winning vegetarian court recipes, prepared fresh with cold-pressed oils, hand-ground spices, and organic produce.</p>
         
         <div class="fulfillment-box">
           <div class="fulfillment-toggle">
             <button class="toggle-btn active" id="btn-delivery" type="button">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 18H3c-.6 0-1-.4-1-1V7c0-.6.4-1 1-1h10c.6 0 1 .4 1 1v11"/><path d="M14 9h4l4 4v4c0 .6-.4 1-1 1h-2"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg>
               <span>Delivery (35-45 mins)</span>
             </button>
             <button class="toggle-btn" id="btn-pickup" type="button">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
               <span>Takeaway Pickup (20 mins)</span>
             </button>
           </div>
           <div class="address-preview">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/><circle cx="12" cy="10" r="3"/></svg>
             <span id="delivery-location-label">Delivering to: Greater Kailash II, New Delhi</span>
             <button class="link-btn" id="change-address-btn" type="button">Change</button>
           </div>
@@ -158,9 +71,9 @@
       </div>
     </section>
 
+    <!-- Controls & Search -->
     <div class="order-control-bar">
       <div class="search-box">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
         <input type="text" id="menu-search-input" placeholder="Search delicacies, ingredients, spices..." autocomplete="off">
         <button id="search-clear-btn" class="search-clear" type="button" aria-label="Clear search">&times;</button>
       </div>
@@ -184,15 +97,15 @@
       </div>
     </div>
 
+    <!-- Menu Grid -->
     <section class="order-catalog-section">
       <div class="catalog-header">
         <div class="catalog-title-group">
           <h2 id="current-category-title">All Delicacies</h2>
-          <span class="item-count-badge" id="results-count">14 Items</span>
+          <span class="item-count-badge" id="results-count">12 Items</span>
         </div>
         <div class="cart-trigger-container">
           <button class="floating-cart-btn" id="open-cart-btn" type="button">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
             <span class="cart-btn-text">View Cart</span>
             <span class="cart-count-badge" id="cart-counter">0</span>
             <span class="cart-total-badge" id="cart-quick-total">₹0</span>
@@ -206,11 +119,12 @@
         <div class="no-results-icon">&#10006;</div>
         <h3>No Delicacies Found</h3>
         <p>No dishes matched your search criteria. Try a different term or clear filters.</p>
-        <button class="btn solid" id="reset-filters-btn" type="button">View Full Menu</button>
+        <button class="btn solid" id="reset-filters-btn" type="button" onclick="location.reload()">View Full Menu</button>
       </div>
     </section>
   </main>
 
+  <!-- Cart Drawer -->
   <div class="cart-drawer-backdrop" id="cart-backdrop"></div>
   <aside class="cart-drawer" id="cart-drawer" aria-label="Shopping Cart">
     <div class="cart-header">
@@ -223,12 +137,9 @@
 
     <div class="cart-content" id="cart-content">
       <div class="cart-empty-state" id="cart-empty-state">
-        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
         <h4>Your cart is empty</h4>
-        <p>Explore our exquisite culinary highlights and add your favorites to get started.</p>
-        <button class="btn solid" id="empty-cart-browse-btn" type="button">Explore Menu</button>
+        <p>Explore our menu and add your favorite delicacies.</p>
       </div>
-
       <div class="cart-items-list" id="cart-items-list"></div>
     </div>
 
@@ -240,7 +151,7 @@
 
       <div class="promo-box">
         <div class="promo-input-group">
-          <input type="text" id="promo-code-input" placeholder="Promo code (Try SAFFRON20)" uppercase>
+          <input type="text" id="promo-code-input" placeholder="Promo code (Try SAFFRON20)">
           <button id="apply-promo-btn" type="button">Apply</button>
         </div>
         <div class="promo-feedback" id="promo-feedback-msg"></div>
@@ -260,7 +171,7 @@
           <span id="bill-delivery">₹40</span>
         </div>
         <div class="bill-row">
-          <span>Taxes &amp; GST (5%)</span>
+          <span>Taxes (5% GST)</span>
           <span id="bill-tax">₹0</span>
         </div>
         <div class="bill-row total">
@@ -270,13 +181,15 @@
       </div>
 
       <button class="btn solid checkout-submit-btn" id="proceed-checkout-btn" type="button">PROCEED TO CHECKOUT</button>
+      <button class="btn outline" id="export-orders-btn" type="button" style="width: 100%; margin-top: 8px;">EXPORT ORDERS (.JSON)</button>
     </div>
   </aside>
 
+  <!-- Checkout Modal -->
   <dialog class="checkout-modal" id="checkout-modal">
     <div class="modal-inner">
       <div class="modal-header">
-        <span class="eyebrow">ORDER CONFIRMATION</span>
+        <span class="eyebrow">ORDER CHECKOUT</span>
         <h3>DELIVERY DETAILS</h3>
         <button class="modal-close-btn" id="close-modal-btn" type="button">&times;</button>
       </div>
@@ -285,54 +198,26 @@
         <div class="form-row">
           <div class="form-group">
             <label for="cust-name">Full Name *</label>
-            <input type="text" id="cust-name" class="form-input" placeholder="Aryavart Verma" required>
+            <input type="text" id="cust-name" class="form-input" placeholder="Your Name" required>
           </div>
           <div class="form-group">
             <label for="cust-phone">Phone Number *</label>
-            <input type="tel" id="cust-phone" class="form-input" placeholder="+91 98765 43210" required>
+            <input type="tel" id="cust-phone" class="form-input" placeholder="+91 9876543210" required>
           </div>
         </div>
 
         <div class="form-group">
-          <label for="cust-address">Delivery Street Address *</label>
-          <input type="text" id="cust-address" class="form-input" placeholder="Villa 14, Lotus Enclave, Greater Kailash II" required>
+          <label for="cust-address">Delivery Address *</label>
+          <input type="text" id="cust-address" class="form-input" placeholder="House/Flat No., Street, Landmark" required>
         </div>
 
-        <div class="form-row">
-          <div class="form-group">
-            <label for="cust-city">City</label>
-            <input type="text" id="cust-city" class="form-input" value="New Delhi" readonly>
-          </div>
-          <div class="form-group">
-            <label for="cust-time">Preferred Delivery Time</label>
-            <select id="cust-time" class="form-input">
-              <option value="now">Immediate Priority (35-45 mins)</option>
-              <option value="lunch">Lunch Banquet (1:00 PM - 2:00 PM)</option>
-              <option value="dinner">Evening Dinner (7:30 PM - 8:30 PM)</option>
-              <option value="late">Royal Night Dining (9:30 PM - 10:30 PM)</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="payment-method-box">
-          <label class="payment-label">Select Payment Method</label>
-          <div class="payment-options-grid">
-            <label class="payment-radio-card active">
-              <input type="radio" name="payment" value="upi" checked>
-              <span class="pay-title">Instant UPI</span>
-              <span class="pay-sub">GPay, PhonePe, Paytm, QR</span>
-            </label>
-            <label class="payment-radio-card">
-              <input type="radio" name="payment" value="card">
-              <span class="pay-title">Cards / Netbanking</span>
-              <span class="pay-sub">Visa, Mastercard, RuPay</span>
-            </label>
-            <label class="payment-radio-card">
-              <input type="radio" name="payment" value="cod">
-              <span class="pay-title">Cash on Delivery</span>
-              <span class="pay-sub">Pay at doorstep upon delivery</span>
-            </label>
-          </div>
+        <div class="form-group">
+          <label for="cust-time">Preferred Delivery Time</label>
+          <select id="cust-time" class="form-input">
+            <option value="Immediate">Immediate Priority (35-45 mins)</option>
+            <option value="Lunch">Lunch Hours (1:00 PM - 2:00 PM)</option>
+            <option value="Dinner">Evening Dinner (7:30 PM - 8:30 PM)</option>
+          </select>
         </div>
 
         <div class="checkout-modal-summary">
@@ -340,36 +225,18 @@
           <strong id="modal-payable-amount">₹0</strong>
         </div>
 
-        <button type="submit" class="btn solid place-order-btn" id="confirm-order-btn">PLACE ROYAL ORDER</button>
+        <button type="submit" class="btn solid place-order-btn">CONFIRM &amp; PLACE ORDER</button>
       </form>
     </div>
   </dialog>
 
+  <!-- Order Success Modal -->
   <dialog class="order-success-modal" id="order-success-modal">
     <div class="success-inner">
       <div class="success-badge">&#10003;</div>
       <span class="eyebrow">ORDER CONFIRMED</span>
       <h2>YOUR FEAST IS BEING PREPARED</h2>
       <p class="success-subtitle">Order Reference: <strong id="order-ref-code">#SP-92410</strong></p>
-
-      <div class="order-tracking-tracker">
-        <div class="tracker-step completed">
-          <div class="step-dot"></div>
-          <div class="step-label">Order Received</div>
-        </div>
-        <div class="tracker-step in-progress">
-          <div class="step-dot"></div>
-          <div class="step-label">Chef Preparing</div>
-        </div>
-        <div class="tracker-step">
-          <div class="step-dot"></div>
-          <div class="step-label">Out for Delivery</div>
-        </div>
-        <div class="tracker-step">
-          <div class="step-dot"></div>
-          <div class="step-label">Delivered</div>
-        </div>
-      </div>
 
       <div class="success-details-card">
         <div class="success-row">
@@ -380,10 +247,6 @@
           <span>Delivery Address:</span>
           <span id="confirmed-address">-</span>
         </div>
-        <div class="success-row">
-          <span>Estimated Arrival:</span>
-          <span>35-45 Minutes</span>
-        </div>
         <div class="success-row total">
           <span>Total Paid:</span>
           <span id="confirmed-total">-</span>
@@ -391,29 +254,35 @@
       </div>
 
       <div class="success-actions">
-        <button class="btn solid" id="continue-shopping-btn" type="button">ORDER MORE DELICACIES</button>
-        <a href="index.html" class="btn" style="border: 1px solid var(--border); color: var(--heading);">RETURN HOME</a>
+        <button class="btn solid" id="continue-shopping-btn" type="button">ORDER MORE DISHES</button>
+        <a href="index.html" class="btn outline">RETURN HOME</a>
       </div>
     </div>
   </dialog>
 
   <div class="toast-notification" id="toast-notify" role="alert" aria-live="polite"></div>
 
-  <footer>
-    <div class="footer-simple">
-      <span class="brand-name">THE SAFFRON PLATE</span>
-      <ul class="footer-simple-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="index.html#menu">Menu</a></li>
-        <li><a href="order.html">Order Online</a></li>
-        <li><a href="reservation.html">Reservations</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="team.html">Our Team</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="auth.html">Sign In / Register</a></li>
-      </ul>
-      <p>© 2026 The Saffron Plate. All rights reserved. Pure Vegetarian Fine Dining.</p>
+  <!-- Simple Clean Site Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <span class="brand-name">THE SAFFRON PLATE</span>
+        <span class="brand-sub">FINE DINING &amp; GOURMET KITCHEN</span>
+        <p>100% Pure Vegetarian Royal Dining. Greater Kailash II, New Delhi.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="order.html">Menu &amp; Order</a>
+        <a href="reservation.html">Reservations</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About Us</a>
+        <a href="team.html">Our Team</a>
+        <a href="contact.html">Contact</a>
+        <a href="auth.html">Sign In</a>
+      </div>
+      <div class="footer-copy">
+        <p>&copy; 2026 The Saffron Plate. All rights reserved.</p>
+      </div>
     </div>
   </footer>
 
