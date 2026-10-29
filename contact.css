@@ -1,180 +1,155 @@
-/* Contact Page Styles */
+/* The Saffron Plate - Contact Page Styles */
 
 .contact-container {
-  max-width: 960px;
-  margin: 50px auto 90px;
+  max-width: 1040px;
+  margin: 44px auto 80px;
   padding: 0 24px;
 }
 
 .contact-header {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 38px;
 }
 
 .contact-header h1 {
-  font-size: clamp(32px, 4vw, 48px);
-  color: var(--heading);
-  letter-spacing: 0.08em;
-  margin-top: 8px;
+  font-size: clamp(28px, 4vw, 42px);
+  margin-top: 6px;
 }
 
 .contact-header p {
-  font-size: 15px;
+  font-size: 14.5px;
   color: var(--body-text);
   max-width: 580px;
-  margin: 14px auto 0;
-  line-height: 1.7;
+  margin: 10px auto 0;
+  line-height: 1.6;
 }
 
 .contact-grid {
   display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  gap: 32px;
+  grid-template-columns: 1.3fr 0.9fr;
+  gap: 28px;
 }
 
-.contact-form-card {
+.contact-card {
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
-  padding: 40px 32px;
-  box-shadow: var(--shadow-card);
+  padding: 30px 26px;
 }
 
-.contact-form-card h2 {
-  font-size: 22px;
+.contact-card h2,
+.contact-card h3 {
+  font-size: 18px;
   color: var(--gold);
-  margin-bottom: 24px;
+  margin-bottom: 18px;
   letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .contact-form {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 14px;
 }
 
 .contact-form .form-group {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 5px;
 }
 
 .contact-form label {
   font-size: 11px;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--heading);
-  font-weight: 500;
+  color: var(--gold);
+  font-weight: 600;
 }
 
 .contact-form .form-input,
 .contact-form textarea.form-input {
   width: 100%;
-  padding: 14px;
-  background: #121212;
+  padding: 10px 12px;
+  background: var(--bg-main);
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
   color: var(--heading);
   font-family: var(--font-sans);
-  font-size: 14px;
-  transition: var(--transition);
+  font-size: 13px;
+  outline: none;
+  transition: border-color 0.2s ease;
 }
 
 .contact-form textarea.form-input {
   resize: vertical;
-  min-height: 130px;
+  min-height: 110px;
 }
 
 .contact-form .form-input:focus {
-  outline: none;
   border-color: var(--gold);
-  box-shadow: 0 0 10px rgba(201, 162, 39, 0.2);
 }
 
-.contact-submit-btn {
+.contact-btn {
   width: 100%;
-  padding: 16px;
-  margin-top: 8px;
+  padding: 12px;
+  margin-top: 4px;
   background: var(--gold);
-  color: #171717;
+  color: #0E0B07;
   border: none;
   border-radius: var(--radius-sm);
   font-family: var(--font-sans);
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 600;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   cursor: pointer;
-  transition: var(--transition);
+  transition: background 0.2s ease;
 }
 
-.contact-submit-btn:hover {
-  background: #d8b132;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(201, 162, 39, 0.3);
+.contact-btn:hover {
+  background: #dbb336;
 }
 
-.contact-info-panel {
+.contact-aside {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 20px;
 }
 
 .contact-info-card {
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
-  padding: 32px 26px;
+  padding: 24px 20px;
 }
 
 .contact-info-card h3 {
-  font-size: 16px;
+  font-size: 14px;
   color: var(--gold);
-  margin-bottom: 18px;
+  margin-bottom: 14px;
   letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .info-list {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-}
-
-.info-item-row {
-  display: flex;
-  align-items: flex-start;
   gap: 14px;
 }
 
-.info-item-icon {
-  font-size: 18px;
-  color: var(--gold);
-  line-height: 1;
-  margin-top: 2px;
-}
-
 .info-item-text h4 {
-  font-size: 13px;
-  color: var(--heading);
-  letter-spacing: 0.05em;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  color: var(--gold);
   margin-bottom: 2px;
 }
 
-.info-item-text p,
-.info-item-text a {
+.info-item-text p {
   font-size: 13px;
   color: var(--body-text);
   line-height: 1.5;
-  text-decoration: none;
-  transition: color var(--transition-fast);
 }
 
-.info-item-text a:hover {
-  color: var(--gold);
-}
-
-@media (max-width: 768px) {
-  .contact-grid {
-    grid-template-columns: 1fr;
-  }
+@media (max-width: 820px) {
+  .contact-grid { grid-template-columns: 1fr; }
 }

@@ -1,4 +1,8 @@
-/* Auth Page Styles */
+.auth-header-nav {
+  position: relative;
+  background: var(--bg-card);
+  border-bottom: 1px solid var(--border);
+}
 
 .auth-container {
   min-height: 70vh;
