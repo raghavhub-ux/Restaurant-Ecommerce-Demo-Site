@@ -1,274 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dining Gallery &amp; Ambiance — The Saffron Plate | Pure Vegetarian Kitchen</title>
+  <title>Gallery, Views &amp; Ambiance — The Saffron Plate</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Cormorant+Garamond:ital,wght@0,500;1,400;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="gallery.css">
 </head>
+
 <body>
-  <header class="site-header navbar-overlay" id="siteHeader">
-    <div class="nav-inner">
-      <nav class="nav-menu-list left" aria-label="Main Navigation Left">
-        <a href="index.html">Home</a>
-        <a href="index.html#menu">Menu</a>
-        <a href="order.html" class="nav-order-link">
-          <span class="nav-pulse-dot" aria-hidden="true"></span>
-          Order Online
-        </a>
-        <a href="reservation.html">Reservations</a>
-      </nav>
-
-      <a href="index.html" class="brand-center" aria-label="The Saffron Plate Home">
-        <div class="brand-crest">
-          <svg class="brand-crest-svg" width="28" height="22" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <path d="M16 1L19.5 9L27 3L23.5 16H8.5L5 3L12.5 9L16 1Z" stroke="url(#goldGradGal)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-            <circle cx="16" cy="1" r="1.5" fill="#C9A227"/>
-            <circle cx="27" cy="3" r="1.5" fill="#C9A227"/>
-            <circle cx="5" cy="3" r="1.5" fill="#C9A227"/>
-            <path d="M7 19.5C11.5 22 20.5 22 25 19.5" stroke="url(#goldGradGal)" stroke-width="1.6" stroke-linecap="round"/>
-            <circle cx="16" cy="19.5" r="1.8" fill="url(#goldGradGal)"/>
-            <defs>
-              <linearGradient id="goldGradGal" x1="0" y1="0" x2="32" y2="24" gradientUnits="userSpaceOnUse">
-                <stop offset="0%" stop-color="#E5C058"/>
-                <stop offset="50%" stop-color="#C9A227"/>
-                <stop offset="100%" stop-color="#9A7818"/>
-              </linearGradient>
-            </defs>
-          </svg>
+  <!-- Unified Balanced Site Header -->
+  <header class="site-header">
+    <nav class="navbar-overlay">
+      <div class="nav-inner">
+        <div class="nav-menu-list left">
+          <a href="index.html">Home</a>
+          <a href="order.html">Menu &amp; Order</a>
+          <a href="reservation.html">Reservations</a>
         </div>
-        <span class="brand-name">THE SAFFRON PLATE</span>
-        <span class="brand-sub">FINE DINING &amp; GOURMET KITCHEN</span>
-      </a>
-
-      <nav class="nav-menu-list right" aria-label="Main Navigation Right">
-        <a href="gallery.html" class="active">Gallery</a>
-        <a href="about.html">About Us</a>
-        <a href="team.html">Our Team</a>
-        <a href="contact.html">Contact</a>
-        <div class="nav-dropdown" id="navAccountDropdown">
-          <button type="button" class="nav-dropdown-trigger" id="navDropdownTrigger" aria-expanded="false" aria-haspopup="true">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-            <span>Account</span>
-            <span class="nav-cart-count">0</span>
-            <svg class="dropdown-chevron" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
-          </button>
-          <div class="nav-dropdown-menu" id="navDropdownMenu">
-            <a href="auth.html" class="dropdown-item">
-              <span class="dropdown-item-left">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path><polyline points="10 17 15 12 10 7"></polyline><line x1="15" y1="12" x2="3" y2="12"></line></svg>
-                <span>Sign In / Register</span>
-              </span>
-            </a>
-            <div class="dropdown-divider"></div>
-            <a href="order.html#cart" class="dropdown-item">
-              <span class="dropdown-item-left">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
-                <span>View Cart</span>
-              </span>
-              <span class="nav-cart-count">0</span>
-            </a>
-          </div>
-        </div>
-      </nav>
-
-      <div class="nav-mobile-actions">
-        <a href="order.html#cart" class="nav-cart-btn mobile-cart-btn" aria-label="View Shopping Cart">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <circle cx="9" cy="21" r="1"></circle>
-            <circle cx="20" cy="21" r="1"></circle>
-            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
-          </svg>
-          <span class="nav-cart-count">0</span>
+        <a href="index.html" class="brand-center">
+          <span class="brand-name">THE SAFFRON PLATE</span>
+          <span class="brand-sub">FINE DINING &amp; GOURMET KITCHEN</span>
         </a>
-        <button type="button" class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Open mobile navigation" aria-expanded="false" aria-controls="mobileNavDrawer">
-          <span></span>
-          <span></span>
-          <span></span>
+        <div class="nav-menu-list right">
+          <a href="about.html">About Us</a>
+          <a href="team.html">Our Team</a>
+          <a href="contact.html">Contact</a>
+          <a href="auth.html" class="nav-auth-btn">Sign In</a>
+        </div>
+        <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle Menu">
+          <span></span><span></span><span></span>
         </button>
       </div>
-    </div>
-  </header>
-  <div class="mobile-nav-backdrop" id="mobileNavBackdrop"></div>
-  <aside class="mobile-nav-drawer" id="mobileNavDrawer" aria-label="Mobile Navigation Menu">
-    <div class="mobile-drawer-header">
-      <div class="brand-crest">
-        <svg width="24" height="18" viewBox="0 0 32 24" fill="none" stroke="var(--gold)" stroke-width="1.8" aria-hidden="true">
-          <path d="M16 1L19.5 9L27 3L23.5 16H8.5L5 3L12.5 9L16 1Z"/>
-        </svg>
+      <div class="mobile-nav-menu" id="mobileNavMenu">
+        <a href="index.html">Home</a>
+        <a href="order.html">Menu &amp; Order</a>
+        <a href="reservation.html">Reservations</a>
+        <a href="about.html">Our Heritage</a>
+        <a href="team.html">Culinary Team</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="auth.html">Sign In</a>
       </div>
-      <span class="drawer-brand-title">THE SAFFRON PLATE</span>
-      <button type="button" class="mobile-nav-close" id="mobileNavClose" aria-label="Close menu">&times;</button>
-    </div>
-
-    <nav class="mobile-drawer-links">
-      <a href="index.html">Home</a>
-      <a href="index.html#menu">Our Menu</a>
-      <a href="order.html" class="drawer-order-highlight">
-        <span>Order Online</span>
-        <span class="drawer-badge">Live</span>
-      </a>
-      <a href="reservation.html">Table Reservations</a>
-      <a href="gallery.html" class="active">Dining Gallery</a>
-      <a href="about.html">About Heritage</a>
-      <a href="team.html">Master Chefs &amp; Team</a>
-      <a href="contact.html">Contact &amp; Location</a>
-      <a href="auth.html">Sign In / Register</a>
     </nav>
+  </header>
 
-    <div class="mobile-drawer-actions">
-      <a href="order.html" class="btn solid mobile-drawer-btn">Order Online</a>
-      <a href="reservation.html" class="btn outline mobile-drawer-btn">Reserve a Table</a>
-    </div>
-
-    <div class="mobile-drawer-footer">
-      <p class="drawer-hours">Open Daily: 12:00 PM – 11:30 PM</p>
-      <p class="drawer-phone">Concierge: +91 11 4987 6543</p>
-    </div>
-  </aside>
-
-  <main class="gallery-page-wrapper">
+  <!-- Page Hero Section -->
+  <main class="gallery-wrapper">
     <section class="gallery-hero">
-      <div class="gallery-hero-content">
-        <span class="eyebrow">ROYAL ARCHITECTURE &amp; CULINARY SPLENDOR</span>
-        <h1>THE <em>GALLERY</em> &amp; AMBIANCE</h1>
-        <p>Step inside an imperial sanctuary where ancient Indian royal architecture converges with contemporary luxury, candle-lit courtyards, and artisanal vegetarian gastronomy.</p>
-        
-        <div class="ambiance-stats-grid">
-          <div class="stat-cell">
-            <span class="stat-number">140+</span>
-            <span class="stat-label">Luxury Covers</span>
-          </div>
-          <div class="stat-cell">
-            <span class="stat-number">3</span>
-            <span class="stat-label">Imperial Suites</span>
-          </div>
-          <div class="stat-cell">
-            <span class="stat-number">360&deg;</span>
-            <span class="stat-label">Starlit Terrace</span>
-          </div>
-          <div class="stat-cell">
-            <span class="stat-number">100%</span>
-            <span class="stat-label">Pure Vegetarian</span>
-          </div>
+      <span class="eyebrow">ROYAL ARCHITECTURE &amp; IMMERSIVE VIBES</span>
+      <h1>THE <em>GALLERY</em> &amp; AMBIANCE</h1>
+      <p class="hero-sub">Step inside an imperial sanctuary where timeless palace architecture converges with starlit open-air terraces, candlelit courtyards, secluded royal suites, and artisanal vegetarian gastronomy.</p>
+      
+      <!-- Ambiance Metric Highlights -->
+      <div class="ambiance-metrics">
+        <div class="metric-item">
+          <span class="metric-num">360°</span>
+          <span class="metric-lbl">Panoramic Terrace Views</span>
+        </div>
+        <div class="metric-item">
+          <span class="metric-num">4</span>
+          <span class="metric-lbl">Curated Dining Sanctuaries</span>
+        </div>
+        <div class="metric-item">
+          <span class="metric-num">100%</span>
+          <span class="metric-lbl">Pure Vegetarian Fine Dining</span>
+        </div>
+        <div class="metric-item">
+          <span class="metric-num">Live</span>
+          <span class="metric-lbl">Sitar &amp; Culinary Atelier</span>
         </div>
       </div>
     </section>
 
-    <div class="gallery-filter-bar">
-      <div class="gallery-filter-buttons" id="gallery-filters">
-        <button class="gallery-pill active" data-filter="all" type="button">All Showcases</button>
-        <button class="gallery-pill" data-filter="terrace" type="button">Starlit Terrace</button>
-        <button class="gallery-pill" data-filter="private" type="button">Private Suites</button>
-        <button class="gallery-pill" data-filter="culinary" type="button">Culinary Plating</button>
-        <button class="gallery-pill" data-filter="artisan" type="button">Chef &amp; Beverage Atelier</button>
+    <!-- Category Filter Tabs -->
+    <div class="gallery-controls">
+      <div class="gallery-tabs" id="gallery-tabs">
+        <button class="filter-tab active" data-filter="all">All Vibes &amp; Views</button>
+        <button class="filter-tab" data-filter="terrace">Terrace &amp; Views</button>
+        <button class="filter-tab" data-filter="architecture">Palace Architecture</button>
+        <button class="filter-tab" data-filter="suites">Private Suites</button>
+        <button class="filter-tab" data-filter="lounge">Ambiance &amp; Lounges</button>
+        <button class="filter-tab" data-filter="culinary">Live Kitchen &amp; Plating</button>
       </div>
-      <div class="gallery-view-mode">
-        <span id="gallery-counter-label">Showing 12 Photographs</span>
-      </div>
+      <span class="gallery-count" id="gallery-counter">Showing 18 Showcases</span>
     </div>
 
-    <section class="gallery-grid-section">
+    <!-- Gallery Grid -->
+    <section class="gallery-grid-container">
       <div class="gallery-grid" id="gallery-grid"></div>
     </section>
 
-    <section class="ambiance-experiences-section">
+    <!-- Curated Spaces Section -->
+    <section class="curated-section">
       <div class="section-head">
         <span class="eyebrow">CURATED SPACES</span>
         <h2>EXPERIENCE OUR SANCTUARY</h2>
       </div>
-
       <div class="experiences-grid">
-        <article class="experience-card">
-          <div class="exp-icon">&#9813;</div>
+        <div class="exp-card">
+          <span class="exp-num">I</span>
           <h3>The Maharaja Suites</h3>
-          <p>Hand-carved teak wood arches, custom gold-leaf chandeliers, acoustic insulation, and dedicated private sommelier and butler service for intimate celebrations.</p>
+          <p>Hand-carved teak wood arches, custom gold-leaf chandeliers, acoustic insulation, and dedicated private butler service for intimate celebrations.</p>
           <a href="reservation.html" class="exp-link">Reserve Suite &rarr;</a>
-        </article>
-
-        <article class="experience-card">
-          <div class="exp-icon">&#9788;</div>
-          <h3>Panoramic Terrace</h3>
-          <p>Overlooking lush tree canopies and city skyline under ambient starlight. Heated imported Italian marble flooring ensures supreme comfort during winter evenings.</p>
+        </div>
+        <div class="exp-card">
+          <span class="exp-num">II</span>
+          <h3>Panoramic Starlit Terrace</h3>
+          <p>Overlooking Delhi canopies under ambient starlight. Heated imported Italian marble flooring ensures supreme comfort during winter evenings.</p>
           <a href="reservation.html" class="exp-link">Book Terrace Table &rarr;</a>
-        </article>
-
-        <article class="experience-card">
-          <div class="exp-icon">&#9752;</div>
+        </div>
+        <div class="exp-card">
+          <span class="exp-num">III</span>
           <h3>Chef Vikramaditya's Atelier</h3>
-          <p>An open culinary theater where age-old vegetarian court recipes from Awadh, Mewar, and Kashmir are revived with modern gastronomy precision.</p>
-          <a href="order.html" class="exp-link">Explore Creations &rarr;</a>
-        </article>
+          <p>An open culinary theater where age-old vegetarian court recipes from Awadh, Mewar, and Kashmir are revived with modern gastronomic precision.</p>
+          <a href="order.html" class="exp-link">Order Dishes &rarr;</a>
+        </div>
       </div>
     </section>
 
-    <section class="gallery-reservation-banner">
-      <div class="banner-inner">
-        <span class="eyebrow">YOUR TABLE AWAITS</span>
-        <h2>IMMERSE IN TIMELESS ELEGANCE</h2>
-        <p>Whether you seek an intimate candlelight anniversary or a grand family royal banquet, our doors are open to welcome you.</p>
-        <div class="banner-actions">
-          <a href="reservation.html" class="btn solid">RESERVE A TABLE</a>
-          <a href="order.html" class="btn" style="border: 1px solid var(--gold); color: var(--gold);">ORDER ONLINE</a>
-        </div>
+    <!-- Reservation CTA Banner -->
+    <section class="gallery-cta">
+      <span class="eyebrow">YOUR TABLE AWAITS</span>
+      <h2>IMMERSE IN TIMELESS ELEGANCE</h2>
+      <p>Whether for an intimate candlelight anniversary or a grand royal banquet, our doors are open to welcome you.</p>
+      <div class="cta-buttons">
+        <a href="reservation.html" class="btn solid">RESERVE A TABLE</a>
+        <a href="order.html" class="btn outline">EXPLORE MENU &amp; ORDER</a>
       </div>
     </section>
   </main>
 
-  <dialog class="lightbox-modal" id="lightbox-modal">
-    <div class="lightbox-dialog-inner">
-      <div class="lightbox-top-bar">
-        <span class="lightbox-index" id="lightbox-index-counter">1 / 12</span>
-        <div class="lightbox-top-actions">
-          <button class="lightbox-icon-btn" id="lightbox-zoom-btn" type="button" aria-label="Toggle zoom">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
-          </button>
-          <button class="lightbox-icon-btn" id="lightbox-close-btn" type="button" aria-label="Close lightbox">&times;</button>
+  <!-- Interactive Lightbox Modal with Next / Prev Navigation -->
+  <div class="modal-overlay" id="gallery-lightbox" style="display: none;">
+    <div class="modal-content lightbox-box">
+      <div class="lightbox-header-bar">
+        <span class="lightbox-counter" id="lightbox-counter">1 / 18</span>
+        <div class="lightbox-actions-top">
+          <button class="lightbox-tool-btn" id="lightbox-zoom" type="button" title="Toggle Zoom">Zoom</button>
+          <button class="modal-close-btn" id="lightbox-close" type="button" title="Close Lightbox">&times;</button>
         </div>
       </div>
 
       <div class="lightbox-media-viewport">
-        <button class="lightbox-nav-btn prev" id="lightbox-prev-btn" type="button" aria-label="Previous image">&#10094;</button>
-        <div class="lightbox-img-container" id="lightbox-img-wrapper">
-          <img src="" alt="" id="lightbox-main-img" class="lightbox-img">
+        <button class="lightbox-nav-arrow prev" id="lightbox-prev" aria-label="Previous Image">&#10094;</button>
+        <div class="lightbox-img-wrap" id="lightbox-img-wrap">
+          <img src="" alt="" id="lightbox-img">
         </div>
-        <button class="lightbox-nav-btn next" id="lightbox-next-btn" type="button" aria-label="Next image">&#10095;</button>
+        <button class="lightbox-nav-arrow next" id="lightbox-next" aria-label="Next Image">&#10095;</button>
       </div>
 
-      <div class="lightbox-caption-bar">
-        <div class="caption-text-block">
-          <span class="caption-category" id="lightbox-cat-badge">Terrace Dining</span>
-          <h3 id="lightbox-title">The Starlit Terrace</h3>
-          <p id="lightbox-desc">Panoramic open-air terrace dining under velvet Delhi skies with candle-lit tables.</p>
+      <div class="lightbox-info-pane">
+        <span class="card-category-badge" id="lightbox-badge">Ambiance</span>
+        <h3 id="lightbox-title">Title</h3>
+        <p id="lightbox-desc">Description</p>
+        <div class="lightbox-footer-actions">
+          <a href="reservation.html" class="btn solid">Reserve This Space</a>
+          <button type="button" class="btn outline" id="lightbox-dismiss-btn">Back to Gallery</button>
         </div>
-        <a href="reservation.html" class="btn solid lightbox-reserve-btn">Book This Space</a>
       </div>
     </div>
-  </dialog>
+  </div>
 
-  <footer>
-    <div class="footer-simple">
-      <span class="brand-name">THE SAFFRON PLATE</span>
-      <ul class="footer-simple-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="index.html#menu">Menu</a></li>
-        <li><a href="order.html">Order Online</a></li>
-        <li><a href="reservation.html">Reservations</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="team.html">Our Team</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="auth.html">Sign In / Register</a></li>
-      </ul>
-      <p>© 2026 The Saffron Plate. All rights reserved. Pure Vegetarian Fine Dining.</p>
+  <!-- Simple Clean Site Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <span class="brand-name">THE SAFFRON PLATE</span>
+        <span class="brand-sub">FINE DINING &amp; GOURMET KITCHEN</span>
+        <p>100% Pure Vegetarian Royal Dining. Greater Kailash II, New Delhi.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="order.html">Menu &amp; Order</a>
+        <a href="reservation.html">Reservations</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About Us</a>
+        <a href="team.html">Our Team</a>
+        <a href="contact.html">Contact</a>
+        <a href="auth.html">Sign In</a>
+      </div>
+      <div class="footer-copy">
+        <p>&copy; 2026 The Saffron Plate. All rights reserved.</p>
+      </div>
     </div>
   </footer>
 
   <script src="nav.js"></script>
   <script src="gallery.js"></script>
 </body>
+
 </html>
